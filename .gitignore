@@ -1,0 +1,16 @@
+.DS_Store
+.bundle/
+iev/
+relaton/
+.asciidoctor/
+_site*/
+_collection*/
+.vscode/
+_plantuml_images/
+Gemfile.lock
+Gemfile
+*.xml.abort
+*.log
+*.log.txt
+*asciidoc*.*
+docker*.*

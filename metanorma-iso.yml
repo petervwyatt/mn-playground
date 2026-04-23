@@ -1,0 +1,9 @@
+---
+metanorma:
+  source:
+    files:
+      - test-iso.adoc
+
+  collection:
+    organization: "ISO"
+    name: "A test & playground ISO document from YAML"

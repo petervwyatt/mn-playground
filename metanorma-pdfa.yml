@@ -1,0 +1,9 @@
+---
+metanorma:
+  source:
+    files:
+      - test-pdfa.adoc
+
+  collection:
+    organization: "PDF Association"
+    name: "A test & playground PDFa document from YAML"
