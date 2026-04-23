@@ -1,1 +1,99 @@
+= Test &amp; Playground ISO Document from ADOC H1
+// see https://www.metanorma.org/author/iso/ref/document-attributes/
+// CSpell:disable
+:data-uri-attachment: true
+:data-uri-image: true
+:docidentifier: TEST
+:edition: 1.0
+:created-date: 2025-04
+:copyright-year: 2025
+:language: en
+:mn-document-class: iso
+:mn-output-extensions: xml,presentation,rxl,html,pdf,sts,isosts
+:block-unnumbered: sourcecode
+:fonts: D050000L;TeXGyreTermes;STIX Two Math;FreeSerif;FreeSans;Source Sans 3
+:presentation-metadata-custom-charset-font: dingbats:"D050000L",agl:"TeXGyreTermes",math:"STIX Two Math",serif:"FreeSerif",sans:"FreeSans"
+:keywords: PDF, test, playground
+:imagesdir: images
+:publisher: PDF Association
+:document-class: iso
+:doctype: international-standard
+:pdf-version: PDF 2.0
+:xrefstyle: short
+:plantuml-image-format: svg 
+:no-isobib-cache:
+:local-cache-only:
+:flush-caches: true
+:svg-conform-profile: base
+:index-terms: false
+:toc-figures: false
+:docnumber: 32000
+:partnumber: 3
+:title-intro-en: Document management
+:title-main-en: Test & Playground
+:title-part-en: ISO Document from Document Attributes
+:title-intro-fr: Gestion de documents
+:title-main-fr: Essais et Aire de jeux
+:title-part-fr: Document ISO à partir des Attributs du Document
+:docstage: 20
+:docsubstage: 00
+:technical-committee-number: 171
+:technical-committee: Document management applications
+:subcommittee-type: SC
+:subcommittee-number: 2
+:subcommittee: Document file formats, EDMS systems and authenticity of information
+:workgroup-type: WG
+:workgroup-number: 8
+:secretariat: ANSI
 :committee-type: technical
+:clause-term: clause
+:clauses-term: clauses
+:sub-clause-term: subclause
+:sub-clauses-term: subclauses
+:annex-term: annex
+:annexes-term: annexes
+:presentation-metadata-pdf-debug: false
+:icons: font
+:toc: left
+:stem: asciimath
+:sectanchors: true
+:sectlinks: true
+:sectnums: true
+:sectnumlevels: 6
+:toclevels: 4
+:docinfo: shared
+:source-highlighter: rouge
+:number-presentation-profile-binary: group=' ',group_digits=8,base=2,base_postfix=b
+
+ifdef::backend-metanorma[]
+// Custom CSS that alters ONLY the HTML appearance. Does NOT change PDF appearance!
+[.preface]
+== Metanorma-Extension
+
+=== user-css
+
+[source]
+----
+.requirement    { color: Red; font-weight: bold; text-transform: uppercase; }
+.recommendation { color: DarkOrange; font-weight: bold; text-transform: uppercase; }
+.Note, .note    { font-size: small; background-color: LightYellow; }
+.Admonition     { font-size: small; background-color: Lavender; }
+.example        { font-size: small; background-color: PowderBlue; }
+.example-title  { text-transform: none; }
+.sourcecode     { font-size: xx-small; background-color: LightCyan; border: 2px solid Black; border-radius: 5px; }
+----
+endif::backend-metanorma[]
+
+== Introduction
+
+These are some test numbers:
+
+// 123d = 7Bh
+* number:123[]
+* number:123[base=16,base_prefix=0x]
+* number:123[base=16,base_postfix=h]
+* number:123[base=16,base_postfix=h,hex_capital]
+* number:123[base=2,base_postfix=b]
+* number:1000[profile=binary]
+
+
