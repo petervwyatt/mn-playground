@@ -9,3 +9,5 @@ make build-docker
 make build-asciidoctor
 make build-asciidoctor-docker
 ```
+
+Currently does NOT use the [custom Ruby code](https://github.com/pdf-association/publication-info/blob/main/mn-override.rb) to pre-process and transform MN markup to pure AsciiDoc.

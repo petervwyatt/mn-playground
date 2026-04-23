@@ -50,7 +50,8 @@ clean:
 build-bundle:
 	$(RM) *.lock
 	bundle install
-	bundle exec metanorma site generate --agree-to-terms --output-dir _site metanorma.yml > bundle.log 2>&1
+	bundle exec metanorma site generate --agree-to-terms --output-dir _site_pdfa metanorma-pdfa.yml > bundle-pdfa.log 2>&1
+	bundle exec metanorma site generate --agree-to-terms --output-dir _site_iso  metanorma-iso.yml  > bundle-iso.log 2>&1
 
 
 # Build using Docker. SLOW using last stable MN.
@@ -58,13 +59,16 @@ build-bundle:
 .PHONY: build-docker
 build-docker:
 	docker pull metanorma/metanorma
-	docker run --name mn-test --rm --volume "$(shell $(PWD))":/metanorma/ -w /metanorma metanorma/metanorma metanorma site generate metanorma.yml --output-dir _site --agree-to-terms > docker.log  2>&1
+	docker run --name mn-test --rm --volume "$(shell $(PWD))":/metanorma/ -w /metanorma metanorma/metanorma metanorma site generate metanorma-pdfa.yml --output-dir _site_dpdfa --agree-to-terms > docker-pdfa.log  2>&1
+	docker run --name mn-test --rm --volume "$(shell $(PWD))":/metanorma/ -w /metanorma metanorma/metanorma metanorma site generate metanorma-iso.yml  --output-dir _site_diso  --agree-to-terms > docker-iso.log  2>&1
 
 
 # Build using AsciiDoctor (for debugging only!). VERY FAST but doesn't support many MN features.
 .PHONY: build-asciidoctor
 build-asciidoctor:
 	cd source && \
-	asciidoctor     --warnings --verbose --out-file asciidoctor.html test.adoc > asciidoctor-html.log 2>&1 && \
-	asciidoctor-pdf --warnings --verbose --out-file asciidoctor.pdf  test.adoc  > asciidoctor-pdf.log 2>&1
+	asciidoctor     --warnings --verbose --out-file asciidoctor.html test-pdfa.adoc > asciidoctor-html-pdfa.log 2>&1 && \
+	asciidoctor     --warnings --verbose --out-file asciidoctor.html test-iso.adoc  > asciidoctor-html-iso.log 2>&1 && \
+	asciidoctor-pdf --warnings --verbose --out-file asciidoctor.pdf  test-pdfa.adoc > asciidoctor-pdf-pdfa.log 2>&1 \
+	asciidoctor-pdf --warnings --verbose --out-file asciidoctor.pdf  test-iso.adoc  > asciidoctor-pdf-iso.log 2>&1
 
