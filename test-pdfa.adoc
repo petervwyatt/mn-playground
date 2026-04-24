@@ -72,16 +72,9 @@ ifdef::backend-metanorma[]
 ----
 endif::backend-metanorma[]
 
-== Introduction
 
-These are some test numbers:
 
-// 123d = 7Bh
-* number:123[]
-* number:123[base=16,base_prefix=0x]
-* number:123[base=16,base_postfix=h]
-* number:123[base=16,base_postfix=h,hex_capital]
-* number:123[base=2,base_postfix=b]
-* number:1000[profile=binary]
+include::testing1.adoc[]
+include::testing2.adoc[]
 
 

@@ -1,0 +1,42 @@
+== Testing source code blocks
+
+Here is an XML source code block with an inline image. See also the document attribute `:source-linenums-option:`:
+
+[source,xml,subs="verbatim,macros"]
+----
+<P>
+    <image data="using inline `image:`">
+        text before {{{ image:Letter_T.png[] }}}ext after
+    </image>
+    <image data="using `pass:[]` with HTML img tag">
+        text before {{{ pass:[<img src="Letter_T.png" alt="Bitmap of the letter 'T'" width="16" height="19" />] }}}ext after
+    </image>
+</P>
+----
+
+
+This source block uses AsciiDoc conditionals to alter the block identifier. Using normal `ifdef::` https://github.com/metanorma/metanorma-standoc/issues/1163#issuecomment-4304388756[adds blank lines which is bad].
+
+ifeval::[{mn-document-class} == "pdfa"]
+:is-pdfa:
+endif::[]
+
+ifdef::is-pdfa[[source%linenums,pdf]]
+ifndef::is-pdfa[[source,pdf]]
+--
+99 0 obj
+<<
+   /Type /Page
+   /Resources <<          % The current resource dictionary
+      /Properties << /OC2 20 0 R /OC3 30 0 R /OC4 40 0 R >>
+      /XObject << /lm3 50 0 R /lm4 /60 0 R >>
+   >>
+   /Length 123`
+>>
+stream
+{{{__some random **inline** text formatting including ``backticks``__}}}
+endstream
+endobj
+--
+
+

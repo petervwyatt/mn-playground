@@ -1,0 +1,14 @@
+== Testing number formatting
+
+These are some test numbers. See also the document attribute `:number-presentation-profile-binary:`:
+
+// 123d = 7Bh = 0x7B = \173 octal = 0111 1011 binary
+* number:123[]
+* number:123[base=16,base_prefix=0x]
+* number:123[base=16,base_postfix=h]
+* number:123[base=16,base_postfix=h,hex_capital]
+* number:123[base=2,base_postfix=b]
+* number:123[base=8,prefix=\]
+* number:1234[profile=binary]
+
+
