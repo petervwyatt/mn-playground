@@ -1,4 +1,4 @@
-== Testing source code blocks
+== Testing source code
 
 // By default PDFa flavour has line numbers, ISO does not.
 ifeval::[{mn-document-class} == "pdfa"]

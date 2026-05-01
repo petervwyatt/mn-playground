@@ -1,0 +1,19 @@
+== Attachments
+
+Test to see if the *Desc* string of embedded file attachments gets correctly converted as Unicode characters, and MN magic things "smart quotes". The most portable Dec string would be as UTF-16BE but the required 2-byte 0xFE 0xFF BoM is required. Also test for differences between ASCII and PDF default *PDFDocEcoding*.
+
+Also test how files get embedded, and what differences `span:classification.pdf-AFRelationship[Schema]` makes... Need to use a PDF forensic tool!
+
+.Table of *PDFDocEncoding* vs Unicode
+[cols="a,a,a,a",options="header"]
+|===
+h| *PDFDocEncoding* name | *PDFDocEncoding* value | Unicode codepoint | AsciiDoc
+| Breve | 024 dec | U+02D8 | &#x02db;
+| Caron | 025 dec | U+02c7 | &#x02c7;
+| Dagger | 129 | U+2020 | &#x2020;
+| Double dagger | 130 | U+2021 | &#x2021;
+|===
+
+This is a <<Attachment1,reference to Attachment 1 with an AFRelationship>> and this is a <<Attachment1,reference to Attachment 2 also with an AFRelationship>>. <Attachment 3,Attachment 3>> does NOT have an *AFRelationship*.
+
+
