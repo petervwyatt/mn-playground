@@ -17,3 +17,14 @@ h| *PDFDocEncoding* name | *PDFDocEncoding* value | Unicode codepoint | AsciiDoc
 This is a <<Attachment1,reference to Attachment 1 with an AFRelationship>> and this is a <<Attachment1,reference to Attachment 2 also with an AFRelationship>>. <Attachment 3,Attachment 3>> does NOT have an *AFRelationship*.
 
 
+
+[bibliography]
+== Bibliography
+
+* [[[Attachment1,attachment:(metanorma-pdfa.yml)]]], span:classification.pdf-AFRelationship[Data], Double-quoted "text" with **bold** and apostrophe's.
+
+* [[[Attachment2,attachment:(metanorma-iso.yml)]]], span:classification.pdf-AFRelationship[Schema], Unicode that don't match PDFDocEncoding. Dagger &#x2020; and Double-dagger &#x2021;.
+
+* [[[Attachment3,attachment:(cspell.json)]]], Attachment without an AFRelationship. A CJK: &#x44CA;.
+
+
