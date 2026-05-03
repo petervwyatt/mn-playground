@@ -14,7 +14,7 @@ h| *PDFDocEncoding* name | *PDFDocEncoding* value | Unicode codepoint | AsciiDoc
 | Double dagger | 130 | U+2021 | &#x2021;
 |===
 
-This is a <<Attachment1,reference to Attachment 1 with an AFRelationship>> and this is a <<Attachment1,reference to Attachment 2 also with an AFRelationship>>. <Attachment 3,Attachment 3>> does NOT have an *AFRelationship*.
+This is a <<Attachment1,reference to Attachment 1 with an AFRelationship>> and this is a <<Attachment2,reference to Attachment 2 also with an AFRelationship>>. <<Attachment3,Attachment 3>> does NOT have an *AFRelationship*.
 
 
 
