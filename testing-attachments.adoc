@@ -26,7 +26,8 @@ Here is the first mention of the <<SomeSpec, custom bibliographic entry>>. And h
 
 // Testing of notes related to bibliographic entries. See https://www.metanorma.org/author/topics/sections/bibliography/
 // Notes need to be "span:note.display[...]" to render!!!
-* [[[SomeSpec, nofetch(dropid(SomeSpec))]]]
+//* [[[SomeSpec, nofetch(dropid(SomeSpec))]]]
+* [[[SomeSpec, ]]] // see https://github.com/relaton/relaton-db/issues/140
 span:title[A fake title]
 span:version[1.2]
 span:date[2026-04] // has to be YYYY-MM-DD
