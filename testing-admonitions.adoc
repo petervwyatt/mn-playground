@@ -1,0 +1,107 @@
+== Admonitions
+
+See https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[AsciiDoctor Docs] and https://www.metanorma.org/author/topics/blocks/admonitions/[MN docs].
+Test of the XML and HTML outputs related to https://github.com/pdf-association/spec-pdf-core/issues/48[this GitHub issue]. Also check for styling.
+
+NOTE: This is a single-line note admonition which is supported in both MN and AsciiDoctor.
+
+TIP: This is a single-line tip admonition which is supported in both MN and AsciiDoctor.
+
+IMPORTANT: This is a single-line important admonition which is supported in both MN and AsciiDoctor.
+
+CAUTION: This is a single-line caution admonition which is supported in both MN and AsciiDoctor.
+
+WARNING: This is a single-line warning admonition which is supported in both MN and AsciiDoctor.
+
+=== Editor notes need a heading 
+
+EDITOR: This is a single-line editor admonition which is only supported by MN.
+
+=== To-do notes need a heading 
+
+TODO: This is a single-line to-do admonition which is only supported by MN.
+
+Below this point are the block equivalents with captions immediately BELOW the block marker. 
+
+[NOTE]
+.Caption of note block
+====
+This is a single-line note admonition which is supported in both MN and AsciiDoctor.
+====
+
+[TIP,type=box]
+.Caption of boxed tip block
+====
+This is a single-line tip admonition which is supported in both MN and AsciiDoctor.
+====
+
+[IMPORTANT]
+.Caption of important block
+====
+This is a single-line important admonition which is supported in both MN and AsciiDoctor.
+====
+
+[TIP]
+.Caption of tip block
+====
+This is a single-line tip admonition which is supported in both MN and AsciiDoctor.
+====
+
+[CAUTION]
+.Caption of caution block
+====
+This is a single-line caution admonition which is supported in both MN and AsciiDoctor.
+====
+
+[WARNING]
+.Caption of warning block
+====
+This is a block warning admonition with a caption which is supported in both MN and AsciiDoctor.
+====
+
+=== Editor notes need a heading 
+
+[EDITOR]
+.Caption of editor block
+====
+This is a block editor admonition with a caption which is only supported by MN.
+====
+
+=== To-do notes need a heading 
+
+[TODO]
+.Caption of to-do block
+====
+This is a block to-do admonition with a caption which is only supported by MN.
+====
+
+[type=Danger]
+.Caption of danger block
+====
+This is a block danger admonition with a caption which is only supported by MN.
+====
+
+[WARNING,type=Safety Precaution]
+.Caption of safety precaution block
+====
+This is a block danger admonition with a caption which is only supported by MN.
+====
+
+.Caption before example block (both)
+[example]
+.Caption after example block (both)
+====
+This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
+====
+
+[example]
+.Caption only after example block
+====
+This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
+====
+
+.Caption only before example block
+[example]
+====
+This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
+====

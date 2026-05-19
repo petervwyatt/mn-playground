@@ -68,6 +68,7 @@
 
 include::testing-numbers.adoc[]
 include::testing-source.adoc[]
+include::testing-admonitions.adoc[]
 include::testing-attachments.adoc[]
 
 
