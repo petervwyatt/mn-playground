@@ -1,5 +1,7 @@
 == Admonitions
 
+=== Heading to suppress hanging paragraph warning
+
 See https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[AsciiDoctor Docs] and https://www.metanorma.org/author/topics/blocks/admonitions/[MN docs].
 Test of the XML and HTML outputs related to https://github.com/pdf-association/spec-pdf-core/issues/48[this GitHub issue]. Also check for styling.
 
@@ -81,6 +83,7 @@ This is a block to-do admonition with a caption which is only supported by MN.
 This is a block danger admonition with a caption which is only supported by MN.
 ====
 
+// As per MN documentation
 [WARNING,type=Safety Precaution]
 .Caption of safety precaution block
 ====
