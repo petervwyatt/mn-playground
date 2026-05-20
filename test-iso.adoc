@@ -1,4 +1,4 @@
-= Test &amp; Playground ISO Document from ADOC H1
+= __Test__ & **Playground** ISO Document from ADOC `H1`
 // see https://www.metanorma.org/author/iso/ref/document-attributes/
 // CSpell:disable
 :data-uri-attachment: true
@@ -62,7 +62,10 @@
 :sectnumlevels: 6
 :toclevels: 4
 :docinfo: shared
+:number-presentation-profile-hex: group=' ',group_digits=4,base=16,base_postfix='h',hex_capital=true
+:number-presentation-profile-octal: group='\',group_digits=3,base=8,base_postfix='\'
 :number-presentation-profile-binary: group=' ',group_digits=4,base=2,base_postfix=b
+:number-presentation-profile-unicode: base=16,base_prefix='U+',hex_capital=true,significant=4
 
 
 
