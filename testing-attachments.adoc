@@ -10,12 +10,12 @@ Also test how files get embedded, and what differences `span:classification.pdf-
 .Table of *PDFDocEncoding* vs Unicode
 [cols="a,a,a,a",options="header"]
 |===
-h| *PDFDocEncoding* name | *PDFDocEncoding* value | Unicode codepoint | AsciiDoc
+h| **PDFDocEncoding** name | **PDFDocEncoding** value | Unicode codepoint | AsciiDoc
 | Breve | 024 dec | U+02D8 | &#x02db;
 | Caron | 025 dec | U+02c7 | &#x02c7;
 | Dagger | 129 | U+2020 | &#x2020;
 | Double dagger | 130 | U+2021 | &#x2021;
-| __invalid!__ | - | - | U+44CA | &#x44CA;
+| __invalid!__ | - | U+44CA | &#x44CA;
 |===
 
 This is a <<Attachment1,reference to Attachment 1 with an AFRelationship>> and this is a <<Attachment2,reference to Attachment 2 also with an AFRelationship>>. <<Attachment3,Attachment 3>> does NOT have an *AFRelationship*.
