@@ -1,0 +1,22 @@
+== Testing of spans and formatting
+
+This is a sentence with a span:requirement[shall] requirement.
+
+See <https://docs.asciidoctor.org/asciidoc/latest/blocks/breaks/>.
+
+There should be a horizontal line below this sentence.
+
+// "Thematic break" a.k.a. horizontal line
+'''
+
+This is a sentence with a span:recommendation[should] recommendation.
+
+// Forced page break
+[%always]
+<<<
+
+This sentence should start on a new page.
+
+This is a sentence with a PDF version span:pdf-version[1.3] as used in PDF specs.
+
+

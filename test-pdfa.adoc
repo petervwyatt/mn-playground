@@ -3,7 +3,7 @@
 // CSpell:disable
 :data-uri-attachment: true
 :data-uri-image: true
-:docidentifier: TEST
+:docidentifier: DOCID
 :edition: 1.0
 :created-date: 2025-04
 :copyright-year: 2025
@@ -13,7 +13,7 @@
 :block-unnumbered: sourcecode
 :fonts: D050000L;TeXGyreTermes;STIX Two Math;FreeSerif;FreeSans;Source Sans 3
 :presentation-metadata-custom-charset-font: dingbats:"D050000L",agl:"TeXGyreTermes",math:"STIX Two Math",serif:"FreeSerif",sans:"FreeSans"
-:keywords: PDF, test, playground
+:keywords: PDF, test, playground, fake
 :imagesdir: images
 :publisher: PDF Association
 :document-class: pdfa
@@ -22,7 +22,6 @@
 :committee-type: technical
 :status: working-draft
 :coverpage-image: images/test-cover.png
-:pdf-version: PDF 2.0
 :xrefstyle: full
 :plantuml-image-format: svg 
 :no-isobib-cache:
@@ -78,6 +77,7 @@ endif::backend-metanorma[]
 
 
 
+include::testing-spans.adoc[]
 include::testing-numbers.adoc[]
 include::testing-source.adoc[]
 include::testing-admonitions.adoc[]
