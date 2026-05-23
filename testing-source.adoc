@@ -12,7 +12,7 @@ ifdef::source-highlighter[* `:source-highlighter:` is set to `{source-highlighte
 
 ifdef::source-linenums-option[* `:source-linenums-option:` is set to `{source-linenums-option}`.]
 
-Here is an XML source code block with an inline image. 
+Here is an XML source code block with an inline image: `subs="verbatim,macros"`. 
 
 [source,xml,subs="verbatim,macros"]
 ----

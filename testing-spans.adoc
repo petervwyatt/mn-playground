@@ -1,4 +1,6 @@
-== Testing of spans and formatting
+== Testing of `spans` __and__ **formatting**
+
+The heading above should have backtick, italic, and bold formatting applied. Check in both text body and navigation menus.
 
 This is a sentence with a span:requirement[shall] requirement.
 
@@ -15,8 +17,8 @@ This is a sentence with a span:recommendation[should] recommendation.
 [%always]
 <<<
 
-This sentence should start on a new page.
+This sentence should always start on a new page.
 
-This is a sentence with a PDF version span:pdf-version[1.3] as used in PDF specs.
+This is a sentence with a PDF version span:pdf-version[1.3] as used in PDF specs. It hopefully expands to italic "__(PDF 1.3)__" in blue.
 
 
