@@ -8,7 +8,6 @@ _collection*/
 .vscode/
 _plantuml_images/
 Gemfile.lock
-Gemfile
 *.xml.abort
 *.log
 *.log.txt
