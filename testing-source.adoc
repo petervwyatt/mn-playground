@@ -153,4 +153,50 @@ endstream
 endobj
 ----
 
+[source,pdf,keep-lines-together=true]
+----
+6 0 obj
+<< /Type     /Font
+   /Subtype  /Type1
+   /BaseFont /Helvetica
+>>
+endobj
+----
+
+[source,pdf,keep-lines-together=true]
+----
+7 0 obj
+<< /CreationDate (D:20210529)
+   /Producer     (Manual)
+   /Creator      (Peter Wyatt for SafeDocs)
+   /Author       (Peter Wyatt)
+   /Subject      (Inline Image Test for abbreviated and full key names)
+   /Title        (Inline Image Test for abbreviated and full key names)
+   /Keywords     (image, inline, abbreviation, ambiguous)
+>>
+endobj
+----
+
+
+[source,pdf,keep-lines-together=true]
+----
+xref
+0 8
+0000000000 65536 f
+0000000048 00000 n
+0000000137 00000 n
+0000000194 00000 n
+0000000267 00000 n
+0000000791 00000 n
+0000014420 00000 n
+0000014509 00000 n
+trailer
+<< /Size 8
+   /Root 1 0 R
+   /Info 7 0 R
+>>
+startxref
+14872
+%%EOF
+----
 
