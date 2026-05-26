@@ -55,7 +55,7 @@
 :number-presentation-profile-unicode: base=16,base_prefix='U+',hex_capital=true,significant=4
 
 
-
+include::testing-preface.adoc[]
 include::testing-spans.adoc[]
 include::testing-numbers.adoc[]
 include::testing-source.adoc[]

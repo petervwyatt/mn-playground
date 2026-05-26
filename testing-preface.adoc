@@ -1,0 +1,20 @@
+[preface]
+== Preface
+
+This is the special prefactory section text, indicated by both heading text and block markup.
+
+[.preface]
+== Blah
+
+This is a different prefactory section that should be unnumbered but with prefactory markup.
+
+[.preface]
+== Notation
+
+This is a different prefactory section that should be unnumbered but with prefactory markup. There should be hard page break below this section.
+
+[%always]
+<<<
+
+
+  

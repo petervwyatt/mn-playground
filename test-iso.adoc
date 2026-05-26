@@ -68,6 +68,7 @@
 
 
 
+include::testing-preface.adoc[]
 include::testing-spans.adoc[]
 include::testing-numbers.adoc[]
 include::testing-source.adoc[]
