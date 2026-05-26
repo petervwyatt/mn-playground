@@ -23,6 +23,14 @@ Here is an XML source code block with an inline image: `subs="verbatim,macros"`.
 </P>
 ----
 
+[source,xml,subs="verbatim,macros"]
+----
+<P>
+    <image data="using inline `image:`">
+        Text before. {{{ image:Letter_T.png[Some alt text] }}} ext after. SPACE after "}}}".
+    </image>
+</P>
+----
 
 This source block uses AsciiDoc conditionals to alter the block identifier. Using normal `ifdef::` https://github.com/metanorma/metanorma-standoc/issues/1163#issuecomment-4304388756[adds blank lines which is bad].
 
@@ -47,7 +55,7 @@ endstream
 endobj
 
 % Check if `stem:` is supported.
-% It is, but layout goes made when line numbers are enabled.
+% It is, but layout goes mad when line numbers are enabled.
 1 0 obj
 << /Length 123 >>
 stream
@@ -55,5 +63,94 @@ stream
 endstream
 endobj
 --
+
+Use of multiple adjacent source code blocks with `keep-lines-together=true` to see if we can control page breaks and avoid orphans and widows in the middle of PDF objects which ruin readability. There is also `keep-with-next=true` but this is not used here:
+
+[source,pdf,keep-lines-together=true]
+----
+%PDF-1.7
+% Copyright 2021, PDF Association.
+1 0 obj
+<< /Type      /Catalog
+   /Outlines  2 0 R
+   /Pages     3 0 R
+>>
+endobj
+----
+
+[source,pdf,keep-lines-together=true]
+----
+2 0 obj
+<< /Type  /Outlines
+   /Count 0
+>>
+endobj
+----
+
+[source,pdf,keep-lines-together=true]
+----
+3 0 obj
+<< /Type  /Pages
+   /Kids  [4 0 R]
+   /Count 1
+>>
+endobj
+----
+
+[source,pdf,keep-lines-together=true]
+----
+4 0 obj
+<< /Type      /Page
+   /Parent    3 0 R
+   /MediaBox  [0 0 900 900]
+   /Contents  5 0 R
+   /Resources 
+   << /ColorSpace 
+      << /3chanRGB [ /CalRGB
+                     << /WhitePoint [0.9505 1.0 1.0890]
+                        /Gamma  [0.5 1.2 1.9]
+                        /Matrix [0.4497 0.2446 0.0252
+                                 0.3163 0.4920 0.1412
+                                 0.3845 0.0833 0.9227]
+                     >> ]
+      >>
+      /Font << /F1 6 0 R >>
+   >>
+>>
+endobj
+----
+
+[source,pdf,keep-lines-together=true]
+----
+5 0 obj
+<< /Length 13569  >>
+stream
+q
+BT
+  0 0 0 rg % Black text
+  /F1 8 Tf
+  10 0 0 10 45 520 Tm
+  (1) Tj
+ET
+Q
+q
+0 1 0 rg             % Green fill
+10 400 200 100 re f  % Paint green rectangle below image
+200 0 0 100 10 400 cm
+BI
+  /Width           20
+  /Height          10
+  /BitsPerComponent  8
+  /ColorSpace      /DeviceRGB
+  /Filter          [/ASCIIHexDecode] 
+  /Length          1276
+ID
+ff0000ff0000ff0000ff0000ff0000ff
+0000ff0000ff0000ff0000ff0000ff00
+EI
+Q
+endstream
+endobj
+----
 
 
