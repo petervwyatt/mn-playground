@@ -1,17 +1,24 @@
 == Testing of `spans` __and__ **formatting**
 
-The heading above should have backtick, italic, and bold formatting applied. Check in both text body and navigation menus.
+The heading above should have backtick, italic, and bold formatting applied (in that order). Check in both text body and navigation menus.
 
-This is a sentence with a span:requirement[shall] requirement.
+This is a sentence with a span:requirement[shall] requirement and a span:recommendation[should] recommendation.
 
 See <https://docs.asciidoctor.org/asciidoc/latest/blocks/breaks/>.
 
-There should be a horizontal line below this sentence.
+This is "double quoted" and 'single quoted' with smart quotes. 
+
+* This double quote is hopefully +"+ not smart quoted. Neither is this single quote +'+ by using a single PLUS SIGN.
+* This double quote is hopefully ++"++ not smart quoted. Neither is this single quote ++'++ by using double PLUS SIGNS.
+* This double quote is hopefully +++"+++ not smart quoted. Neither is this single quote +++'+++ by using triple PLUS SIGNS.
+* This double quote is hopefully pass:["] not smart quoted. Neither is this single quote pass:['] by using `pass:` markup.
+
+There should be a horizontal line below this sentence. This sentence also contains two footnotes footnote:[This is the first footnote from a sentence above and is hopefully rendered with good colour contrast for WCAG.] mid-sentence footnote:[This is the second footnote from a sentence above and is hopefully rendered with good colour contrast for WCAG.].
 
 // "Thematic break" a.k.a. horizontal line
 '''
 
-This is a sentence with a span:recommendation[should] recommendation.
+This is a sentence with a span:recommendation[should] recommendation. A forced page break is below this sentence.
 
 // Forced page break
 [%always]
