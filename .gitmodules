@@ -1,0 +1,3 @@
+[submodule "publication-info"]
+	path = publication-info
+	url = https://github.com/pdf-association/publication-info.git
