@@ -13,3 +13,4 @@ Gemfile.lock
 *.log.txt
 *asciidoc*.*
 docker*.*
+docinfo-*.*
