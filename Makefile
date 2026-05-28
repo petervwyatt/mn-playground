@@ -73,7 +73,7 @@ build-docker:
 
 
 # Build using AsciiDoctor via bundle (for debugging only!). VERY FAST but doesn't support many MN features.
-.PHONY: build-asciidoctor
+.PHONY: build-asciidoctor-bundle
 build-asciidoctor-bundle:
 	$(CP) .$(SEP)publication-info$(SEP)docinfo-*.* .
 	$(RM) *.lock
