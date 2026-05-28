@@ -21,7 +21,6 @@
 :xrefstyle: short
 :plantuml-image-format: svg 
 :no-isobib-cache:
-:local-cache-only:
 :flush-caches: true
 :svg-conform-profile: base
 :index-terms: false
