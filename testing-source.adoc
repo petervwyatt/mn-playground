@@ -1,13 +1,5 @@
 == Testing source code
 
-// By default PDFa flavour has line numbers, ISO does not.
-ifeval::[{mn-document-class} == "pdfa"]
-:is-pdfa:
-endif::[]
-ifeval::[{mn-document-class} == "iso"]
-:is-iso:
-endif::[]
-
 ifdef::source-highlighter[* `:source-highlighter:` is set to `{source-highlighter}`.]
 
 ifdef::source-linenums-option[* `:source-linenums-option:` is set to `{source-linenums-option}`.]

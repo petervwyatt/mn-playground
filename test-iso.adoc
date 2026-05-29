@@ -65,7 +65,13 @@
 :number-presentation-profile-binary: group=' ',group_digits=4,base=2,base_postfix=b
 :number-presentation-profile-unicode: base=16,base_prefix='U+',hex_capital=true,significant=4
 
-
+// By default PDFa flavour has line numbers, ISO does not.
+ifeval::[{mn-document-class} == "pdfa"]
+:is-pdfa:
+endif::[]
+ifeval::[{mn-document-class} == "iso"]
+:is-iso:
+endif::[]
 
 include::testing-preface.adoc[]
 include::testing-spans.adoc[]
