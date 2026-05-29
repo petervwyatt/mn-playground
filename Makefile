@@ -57,7 +57,6 @@ clean:
 # Use different Gemfiles for flavours to allow customization (eg. forked Gems with mods)
 .PHONY: build-bundle
 build-bundle:
-	$(RM) *.lock
 	bundle install
 	bundle exec metanorma site generate --agree-to-terms --output-dir _site_pdfa metanorma-pdfa.yml > bundle-pdfa.log 2>&1
 	bundle exec metanorma site generate --agree-to-terms --output-dir _site_iso  metanorma-iso.yml  > bundle-iso.log  2>&1
@@ -76,12 +75,11 @@ build-docker:
 .PHONY: build-asciidoctor-bundle
 build-asciidoctor-bundle:
 	$(CP) .$(SEP)publication-info$(SEP)docinfo-*.* .
-	$(RM) *.lock
 	bundle install
 	bundle exec asciidoctor     --warnings --verbose --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-bundle-pdfa.html $(MAIN_PDFA_ADOC) > asciidoctor-html-bundle-pdfa.log 2>&1
 	bundle exec asciidoctor     --warnings --verbose --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-bundle-iso.html  $(MAIN_ISO_ADOC)  > asciidoctor-html-bundle-iso.log 2>&1
-	bundle exec asciidoctor-pdf --warnings --verbose --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-bundle-pdfa.pdf  $(MAIN_PDFA_ADOC) > asciidoctor-pdf-bundle-pdfa.log 2>&1
-	bundle exec asciidoctor-pdf --warnings --verbose --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-bundle-iso.pdf   $(MAIN_ISO_ADOC)  > asciidoctor-pdf-bundle-iso.log 2>&1
+	bundle exec asciidoctor-pdf --warnings --verbose --theme .$(SEP)publication-info$(SEP)pdfa-theme.yml --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-bundle-pdfa.pdf  $(MAIN_PDFA_ADOC) > asciidoctor-pdf-bundle-pdfa.log 2>&1
+	bundle exec asciidoctor-pdf --warnings --verbose --theme .$(SEP)publication-info$(SEP)pdfa-theme.yml --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-bundle-iso.pdf   $(MAIN_ISO_ADOC)  > asciidoctor-pdf-bundle-iso.log 2>&1
 
 
 # Build using AsciiDoctor (for debugging only!). VERY FAST but doesn't support many MN features.
@@ -90,8 +88,8 @@ build-asciidoctor:
 	$(CP) .$(SEP)publication-info$(SEP)docinfo-*.* .
 	asciidoctor     --warnings --verbose --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-pdfa.html $(MAIN_PDFA_ADOC) > asciidoctor-html-pdfa.log 2>&1
 	asciidoctor     --warnings --verbose --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-iso.html  $(MAIN_ISO_ADOC)  > asciidoctor-html-iso.log 2>&1
-	asciidoctor-pdf --warnings --verbose --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-pdfa.pdf  $(MAIN_PDFA_ADOC) > asciidoctor-pdf-pdfa.log 2>&1
-	asciidoctor-pdf --warnings --verbose --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-iso.pdf   $(MAIN_ISO_ADOC)  > asciidoctor-pdf-iso.log 2>&1
+	asciidoctor-pdf --warnings --verbose --theme .$(SEP)publication-info$(SEP)pdfa-theme.yml --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-pdfa.pdf  $(MAIN_PDFA_ADOC) > asciidoctor-pdf-pdfa.log 2>&1
+	asciidoctor-pdf --warnings --verbose --theme .$(SEP)publication-info$(SEP)pdfa-theme.yml --require .$(SEP)publication-info$(SEP)mn-override.rb --out-file asciidoctor-iso.pdf   $(MAIN_ISO_ADOC)  > asciidoctor-pdf-iso.log 2>&1
 
 
 # Build using AsciiDoctor Docker (for debugging only!). FAST-ish but still doesn't support all MN features.
@@ -100,7 +98,7 @@ build-asciidoctor-docker:
 	$(CP) .$(SEP)publication-info$(SEP)docinfo-*.* .
 	docker pull asciidoctor/docker-asciidoctor
 	docker run --name $(DOCKER_NAME) --rm --volume .:/documents asciidoctor/docker-asciidoctor sh -c "asciidoctor     --warnings --verbose --require ./publication-info/mn-override.rb --require asciidoctor-diagram --require asciidoctor-mathematical --out-file dockerad-pdfa.html $(MAIN_PDFA_ADOC) > docker-adoc-pdfa-html.log 2>&1"
-	docker run --name $(DOCKER_NAME) --rm --volume .:/documents asciidoctor/docker-asciidoctor sh -c "asciidoctor-pdf --warnings --verbose --require ./publication-info/mn-override.rb --require asciidoctor-diagram --require asciidoctor-mathematical --out-file dockerad-pdfa.pdf  $(MAIN_PDFA_ADOC) > docker-adoc-pdfa-pdf.log 2>&1"
 	docker run --name $(DOCKER_NAME) --rm --volume .:/documents asciidoctor/docker-asciidoctor sh -c "asciidoctor     --warnings --verbose --require ./publication-info/mn-override.rb --require asciidoctor-diagram --require asciidoctor-mathematical --out-file dockerad-iso.html  $(MAIN_ISO_ADOC)  > docker-adoc-iso-html.log 2>&1"
-	docker run --name $(DOCKER_NAME) --rm --volume .:/documents asciidoctor/docker-asciidoctor sh -c "asciidoctor-pdf --warnings --verbose --require ./publication-info/mn-override.rb --require asciidoctor-diagram --require asciidoctor-mathematical --out-file dockerad-iso.pdf   $(MAIN_ISO_ADOC)  > docker-adoc-iso-pdf.log 2>&1"
+	docker run --name $(DOCKER_NAME) --rm --volume .:/documents asciidoctor/docker-asciidoctor sh -c "asciidoctor-pdf --warnings --verbose --theme ./publication-info/pdfa-theme.yml --require ./publication-info/mn-override.rb --require asciidoctor-diagram --require asciidoctor-mathematical --out-file dockerad-pdfa.pdf  $(MAIN_PDFA_ADOC) > docker-adoc-pdfa-pdf.log 2>&1"
+	docker run --name $(DOCKER_NAME) --rm --volume .:/documents asciidoctor/docker-asciidoctor sh -c "asciidoctor-pdf --warnings --verbose --theme ./publication-info/pdfa-theme.yml --require ./publication-info/mn-override.rb --require asciidoctor-diagram --require asciidoctor-mathematical --out-file dockerad-iso.pdf   $(MAIN_ISO_ADOC)  > docker-adoc-iso-pdf.log 2>&1"
 
