@@ -1,28 +1,39 @@
 == Testing source code
 
+=== General
+
 ifdef::source-highlighter[* `:source-highlighter:` is set to `{source-highlighter}`.]
 
 ifdef::source-linenums-option[* `:source-linenums-option:` is set to `{source-linenums-option}`.]
 
-Here is an XML source code block with an inline image: `subs="verbatim,macros"`. 
+Here are XML source code blocsk with an inline image and `subs="verbatim,macros"`. 
+
+.Source with inline image in example block with no space
+[example]
+====
+This is the first line of text in the first example, before the source code block.
 
 [source,xml,subs="verbatim,macros"]
 ----
 <P>
     <image data="using inline `image:`">
-        Text before. {{{ image:Letter_T.png[Some alt text] }}}ext after.
+        Text before. {{{image:Letter_T.png[Some alt text]}}}ext after.
     </image>
 </P>
 ----
+====
 
+.Source with inline image **NOT** in example block with space after `}}}`
 [source,xml,subs="verbatim,macros"]
 ----
 <P>
     <image data="using inline `image:`">
-        Text before. {{{ image:Letter_T.png[Some alt text] }}} ext after. SPACE after "}}}".
+        Text before. {{{image:Letter_T.png[Some alt text]}}} ext after. SPACE after "}}}".
     </image>
 </P>
 ----
+
+=== Long source block testing
 
 This source block uses AsciiDoc conditionals to alter the block identifier. Using normal `ifdef::` https://github.com/metanorma/metanorma-standoc/issues/1163#issuecomment-4304388756[adds blank lines which is bad].
 
@@ -37,7 +48,7 @@ This source block uses AsciiDoc conditionals to alter the block identifier. Usin
    /Resources <<          % The current resource dictionary
       /Properties << /OC2 20 0 R /OC3 30 0 R /OC4 40 0 R >>
       /XObject << /Fm3 50 0 R >>
-      /ProcSet [ /ImageA ]
+      /ProcSet [ /ImageA /ImageB ]
    >>
    /Length 123
 >>
@@ -47,7 +58,7 @@ endstream
 endobj
 
 % Check if `stem:` is supported.
-% It is, but layout goes mad when line numbers are enabled.
+% It is, but layout goes mad when line numbers are enabled!
 1 0 obj
 << /Length 123 >>
 stream
@@ -56,7 +67,7 @@ endstream
 endobj
 --
 
-Use of multiple adjacent source code blocks with `keep-lines-together=true` to see if we can control page breaks and avoid orphans and widows in the middle of PDF objects which ruin readability. There is also `keep-with-next=true` but this is not used here:
+Use of multiple adjacent PDF source code blocks with `keep-lines-together=true` to see if we can control page breaks and avoid orphans and widows in the middle of PDF objects which ruin readability. There is also `keep-with-next=true` but this is not used here:
 
 [source,pdf,keep-lines-together=true]
 ----
@@ -69,7 +80,6 @@ Use of multiple adjacent source code blocks with `keep-lines-together=true` to s
 >>
 endobj
 ----
-
 [source,pdf,keep-lines-together=true]
 ----
 2 0 obj
@@ -78,7 +88,6 @@ endobj
 >>
 endobj
 ----
-
 [source,pdf,keep-lines-together=true]
 ----
 3 0 obj
@@ -88,7 +97,6 @@ endobj
 >>
 endobj
 ----
-
 [source,pdf,keep-lines-together=true]
 ----
 4 0 obj
@@ -111,7 +119,6 @@ endobj
 >>
 endobj
 ----
-
 [source,pdf,keep-lines-together=true]
 ----
 5 0 obj
@@ -137,14 +144,13 @@ BI
   /Filter          [/ASCIIHexDecode] 
   /Length          1276
 ID
-ff0000ff0000ff0000ff0000ff0000ff
-0000ff0000ff0000ff0000ff0000ff00
+ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00
+{{{__more data not shown__}}}
 EI
 Q
 endstream
 endobj
 ----
-
 [source,pdf,keep-lines-together=true]
 ----
 6 0 obj
@@ -154,7 +160,6 @@ endobj
 >>
 endobj
 ----
-
 [source,pdf,keep-lines-together=true]
 ----
 7 0 obj
@@ -162,14 +167,12 @@ endobj
    /Producer     (Manual)
    /Creator      (Peter Wyatt for SafeDocs)
    /Author       (Peter Wyatt)
-   /Subject      (Inline Image Test for abbreviated and full key names)
+   /Subject      (Inline Image Test for abbreviated and full key names this is also a very long line to test wrapping in source blocks)
    /Title        (Inline Image Test for abbreviated and full key names)
    /Keywords     (image, inline, abbreviation, ambiguous)
 >>
 endobj
 ----
-
-
 [source,pdf,keep-lines-together=true]
 ----
 xref
@@ -182,6 +185,9 @@ xref
 0000000791 00000 n
 0000014420 00000 n
 0000014509 00000 n
+----
+[source,pdf,keep-lines-together=true]
+----
 trailer
 << /Size 8
    /Root 1 0 R
