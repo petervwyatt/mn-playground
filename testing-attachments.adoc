@@ -7,8 +7,8 @@ Test to see if the *Desc* string of embedded file attachments gets correctly con
 Also test how files get embedded, and what differences `span:classification.pdf-AFRelationship[Schema]` makes. Need to use a PDF forensic tool to inspect what encoding is used for the chars in <<table_PDFDocEncoding>>!
 
 [[table_PDFDocEncoding]]
-.Table of *PDFDocEncoding* vs Unicode
-[cols="a,a,a,a",options="header"]
+.Sortable table of *PDFDocEncoding* vs Unicode
+[role="sortable",cols="a,a,a,a",options="header"]
 |===
 h| **PDFDocEncoding** name | **PDFDocEncoding** value | Unicode codepoint | AsciiDoc
 | Breve | 024 dec | U+02D8 | &#x02db;
@@ -42,7 +42,7 @@ span:uri[https://pdfa.org/]
 span:note[This is the first note span associated with a custom bibliographic reference. It is nice and long so that word wrapping and indentation can be more easily viewed in the various output formats.]
 span:note[This is a second note span associated with a custom bibliographic reference. It is also nice and long so that word wrapping and indentation can still be easily viewed in the various output formats. Blah blah blah.]
 span:note.display[This is the third note span associated with a custom bibliographic reference, but using "display". It is nice and long so that word wrapping and indentation can be more easily viewed in the various output formats.]
-span:note.display,warning[This is a fourth note span associated with a custom bibliographic reference, but using "display". It is also nice and long so that word wrapping and indentation can still be easily viewed in the various output formats. Blah blah blah.]
+span:note.display,warning[This is a fourth note span associated with a custom bibliographic reference, but using "display,warning". It is also nice and long so that word wrapping and indentation can still be easily viewed in the various output formats. Blah blah blah.]
 
 // This is a naked Relaton ISO reference - MN should expand appropriately for the flavour
 * [[[ISO32Ka,(ISO 32000-1:2008)ISO 32000-1:2008]]]
@@ -52,7 +52,7 @@ span:note.display,warning[This is a fourth note span associated with a custom bi
 span:note[This is the first note span associated with a Relaton ISO bibliographic reference. It is nice and long so that word wrapping and indentation can be more easily viewed in the various output formats.]
 span:note[This is a second note span associated with a Relaton ISO bibliographic reference. It is also nice and long so that word wrapping and indentation can still be easily viewed in the various output formats. Blah blah blah.]
 span:note.display[This is the third note span associated with a Relaton ISO bibliographic reference, but using "display". It is nice and long so that word wrapping and indentation can be more easily viewed in the various output formats.]
-span:note.display,warning[This is a fourth note span associated with a Relaton ISO bibliographic reference, but using "display". It is also nice and long so that word wrapping and indentation can still be easily viewed in the various output formats. Blah blah blah again.]
+span:note.display,editorial[This is a fourth note span associated with a Relaton ISO bibliographic reference, but using "display,editorial". It is also nice and long so that word wrapping and indentation can still be easily viewed in the various output formats. Blah blah blah again.]
 
 
 
