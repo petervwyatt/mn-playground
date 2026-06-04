@@ -1,6 +1,6 @@
 == Testing number formatting
 
-See https://www.metanorma.org/author/topics/inline_markup/semantic-elements/#numbers.
+See https://www.metanorma.org/author/topics/inline_markup/semantic-elements/#numbers[].
 
 Test explicit `number` markup for 123 decimal:
 

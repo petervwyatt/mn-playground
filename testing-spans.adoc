@@ -23,7 +23,7 @@ There should be a horizontal line below this sentence. This sentence also contai
 This is a sentence with a span:requirement[shall] requirement and a span:recommendation[should] recommendation.
 
 This is a sentence with a span:recommendation[should] recommendation. A forced page break is below this sentence.
-See <https://docs.asciidoctor.org/asciidoc/latest/blocks/breaks/>.
+See https://docs.asciidoctor.org/asciidoc/latest/blocks/breaks/[].
 
 // Forced page break
 [%always]
