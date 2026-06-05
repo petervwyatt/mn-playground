@@ -6,13 +6,14 @@ ifdef::source-highlighter[* `:source-highlighter:` is set to `{source-highlighte
 
 ifdef::source-linenums-option[* `:source-linenums-option:` is set to `{source-linenums-option}`.]
 
-Here are XML source code blocsk with an inline image and `subs="verbatim,macros"`. 
+Here are XML source code blocks with an inline image and `subs="verbatim,macros"`. 
 
-.Source with inline image in example block with no space
+.Title for exmple block
 [example]
 ====
-This is the first line of text in the first example, before the source code block.
+This is the first line of text in an example block, which includes the source code block below.
 
+.Title for source XML block inside example
 [source,xml,subs="verbatim,macros"]
 ----
 <P>
@@ -21,9 +22,13 @@ This is the first line of text in the first example, before the source code bloc
     </image>
 </P>
 ----
+
+Last line of example block
 ====
 
-.Source with inline image **NOT** in example block with space after `}}}`
+A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
+
+.Long title for XML source block with inline image **NOT** in example block with space after `}}}` inside example
 [source,xml,subs="verbatim,macros"]
 ----
 <P>
@@ -40,6 +45,7 @@ This source block uses AsciiDoc conditionals to alter the block identifier. Usin
 // ifdef::is-pdfa[[source,pdf]]
 // ifndef::is-pdfa[[source%linenums,pdf]]
 
+.Title for PDF source **NOT** inside example
 [source,pdf]
 --
 99 0 obj
@@ -69,6 +75,7 @@ endobj
 
 Use of multiple adjacent PDF source code blocks with `keep-lines-together=true` to see if we can control page breaks and avoid orphans and widows in the middle of PDF objects which ruin readability. There is also `keep-with-next=true` but this is not used here:
 
+.Title of PDF source block - first of several with `keep-lines-together=true`
 [source,pdf,keep-lines-together=true]
 ----
 %PDF-1.7

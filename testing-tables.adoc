@@ -1,0 +1,43 @@
+== Tables
+
+This tests table formatting. Due to zebra-stripping, rows are duplicated to test appearance for alternating rows. There are 2 header rows. See https://www.metanorma.org/author/topics/blocks/tables. This sentence also has a footnote footnote:[This is the footnote text from the first paragraph (not in the table).]
+
+.Title for table 1
+[role="sortable",headerrows=2,cols="a,a,a,a",alt=Alt text for table accessibility,summary=Summary text for table accessibility]
+|===
+.2+|Sample 3+^| Formatting
+| _Italic_ | *Bold* | `Monspaced`
+
+| *Bold* | text | name a| Some text in a sentence with a footnote footnote:[This is the first table footnote text.].
+
+NOTE: This is a note inside a table cell. It has a long sentence so it hopefully spans several lines.
+
+TIP: This is a tip inside a table cell. It also has a long sentence so it hopefully spans several lines.
+
+| *Bold* | text | name a| Some text in a sentence with a second footnote footnote:[This is the second table footnote text.]
+
+NOTE: This is a note inside a table cell. It has a long sentence so it hopefully spans several lines.
+
+WARNING: This is a warning inside a table cell. It also has a long sentence so it hopefully spans several lines.
+
+| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell.
+
+| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell.
+
+|===
+
+NOTE: This is a simple table note because it is not marked as `keep-separate`.
+
+[NOTE]
+====
+This is another note but done as a block. It is also not marked as `keep-separate`.
+====
+
+[NOTE,keep-separate=true]
+====
+This is yet another note but done as a block. It _is_ marked as `keep-separate=true`!
+====
+
+This is a paragraph of normal text after the table. This is a paragraph of normal text after the table. This is a paragraph of normal text after the table. This is a paragraph of normal text after the table.
+
+
