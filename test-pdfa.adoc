@@ -3,8 +3,9 @@
 // CSpell:disable
 :data-uri-attachment: true
 :data-uri-image: true
-:docidentifier: DOCID
-:edition: 1.0
+:docnumber: 99
+:version: 1.2.3
+:edition: 4.5
 :created-date: 2025-04
 :copyright-year: 2025
 :language: en
@@ -20,7 +21,7 @@
 :doctype: specification
 :committee: PDF TWG
 :committee-type: technical
-:status: working-draft
+:docstage: release-candidate
 :coverpage-image: images/test-cover.png
 :xrefstyle: full
 :plantuml-image-format: svg 
@@ -53,13 +54,17 @@
 :number-presentation-profile-binary:  base=2,group=' ',group_digits=4,base_postfix='b'
 :number-presentation-profile-unicode: base=16,base_prefix='U+',hex_capital=true,significant=4
 
-// By default PDFa flavour has line numbers, ISO does not.
 ifeval::[{mn-document-class} == "pdfa"]
 :is-pdfa:
 endif::[]
 ifeval::[{mn-document-class} == "iso"]
 :is-iso:
 endif::[]
+
+// See https://www.metanorma.org/author/ref/document-attributes/
+// :doctype: best-practice-guide or technical-note or application-note or specification
+// :status: draft or release-candidate or published
+// :iteration: - only applies to :status: release-candidate
 
 include::testing-preface.adoc[]
 include::testing-spans.adoc[]
