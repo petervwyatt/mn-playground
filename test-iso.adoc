@@ -4,7 +4,8 @@
 :data-uri-attachment: true
 :data-uri-image: true
 :docidentifier: 98765
-:edition: 1.0
+:edition: 2.3
+:version: 4.5
 :created-date: 2025-04
 :copyright-year: 2025
 :language: en
