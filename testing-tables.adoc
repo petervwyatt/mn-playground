@@ -14,15 +14,35 @@ NOTE: This is a note inside a table cell. It has a long sentence so it hopefully
 
 TIP: This is a tip inside a table cell. It also has a long sentence so it hopefully spans several lines.
 
+.Source block in a table cell
+[source,pdf,keep-lines-together=true]
+----
+2 0 obj
+<<
+  /Key (some value) % comment
+>>
+endobj
+----
+
 | *Bold* | text | name a| Some text in a sentence with a second footnote footnote:[This is the second table footnote text.]
 
 NOTE: This is a note inside a table cell. It has a long sentence so it hopefully spans several lines.
 
 WARNING: This is a warning inside a table cell. It also has a long sentence so it hopefully spans several lines.
 
-| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell.
+.Source block in a second table cell
+[source,pdf,keep-lines-together=true]
+----
+2 0 obj
+<<
+  /Key (some value) % comment
+>>
+endobj
+----
 
-| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell.
+| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures[title=Alt text for pqc URL via title attribute] in a cell.
+
+| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell without markup.
 
 |===
 
