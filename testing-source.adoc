@@ -6,21 +6,42 @@ ifdef::source-highlighter[* `:source-highlighter:` is set to `{source-highlighte
 
 ifdef::source-linenums-option[* `:source-linenums-option:` is set to `{source-linenums-option}`.]
 
-Here are XML source code blocks with an inline image and `subs="verbatim,macros"`. 
+Here are source code blocks with an inline image and `subs="verbatim,macros"`. 
 
 .Title for exmple block
 [example]
 ====
 This is the first line of text in an example block, which includes the source code block below.
 
-.Title for source XML block inside example
+.Title for source XML block inside example with `subs="verbatim,macros"`
 [source,xml,subs="verbatim,macros"]
 ----
 <P>
     <image data="using inline `image:`">
-        Text before. {{{image:Letter_T.png[Some alt text]}}}ext after.
+      Text before. {{{image:Letter_T.png[Some alt text]}}}ext after.
     </image>
 </P>
+----
+
+.Title for source XML block inside example with `subs="macros"`
+[source,xml,subs="macros"]
+----
+<P>
+    <image data="using inline `image:`">
+      Text before. {{{image:Letter_T.png[Some alt text]}}}ext after.
+    </image>
+</P>
+----
+
+.Another title for source HTML block inside example but no `subs` attribute
+[source,html]
+----
+<h1>Some heading</h1>
+<div>
+  <p style="font-size: 12pt; font-weight: normal;"><!-- this is a very long XML comment to see how wrapping of source code works with a table cell -->
+  This is a very long paragraph of text in HTML to see how wrapping of source code works with a table cell. It should be colourized by Rouge.
+  </p>
+</div>
 ----
 
 Last line of example block
@@ -28,7 +49,7 @@ Last line of example block
 
 A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
 
-.Long title for XML source block with inline image **NOT** in example block with space after `}}}` inside example
+.Long title for XML source block with inline image **NOT** in example block with space after `}}}` outside example
 [source,xml,subs="verbatim,macros"]
 ----
 <P>
@@ -36,6 +57,17 @@ A paragraph of random text copied from Wikipedia. Portable Document Format (PDF)
         Text before. {{{image:Letter_T.png[Some alt text]}}} ext after. SPACE after "}}}".
     </image>
 </P>
+----
+
+.Long title for HTML source block outside example but no `subs` attribute
+[source,html]
+----
+<h1>Some heading</h1>
+<div>
+  <p style="font-size: 12pt; font-weight: normal;"><!-- this is a very long XML comment to see how wrapping of source code works with a table cell -->
+  This is a very long paragraph of text in HTML to see how wrapping of source code works with a table cell. It should be colourized by Rouge.
+  </p>
+</div>
 ----
 
 === Long source block testing
@@ -68,7 +100,7 @@ endobj
 1 0 obj
 << /Length 123 >>
 stream
-{{{ stem:[sum_(i=1)^n i^3=((n(n+1))/2)^2] }}}
+\stem:[sum_(i=1)^n i^3=((n(n+1))/2)^2] }}}
 endstream
 endobj
 --
