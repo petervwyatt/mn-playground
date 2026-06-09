@@ -1,7 +1,8 @@
 == Testing of `spans` __and__ **formatting**
 
-The H1 heading above should have backtick, italic, and bold formatting applied (in that order). Check in both text body and navigation menus.
+The H1 heading above should have backtick (code), italic, and bold formatting applied (in that order). Check in both text body and navigation menus.
 
+[[Smart_quoting]]
 === Smart quoting
 
 This is "double quoted" and 'single quoted' with smart quotes. 
@@ -11,6 +12,7 @@ This is "double quoted" and 'single quoted' with smart quotes.
 * This double quote is hopefully +++"+++ not smart quoted. Neither is this single quote +++'+++ by using triple PLUS SIGNS.
 * This double quote is hopefully pass:["] not smart quoted. Neither is this single quote pass:['] by using `pass:` markup.
 
+[[Horizontal_lines]]
 === Horizontal lines
 
 There should be a horizontal line below this sentence. This sentence also contains two footnotes footnote:[This is the first footnote from a sentence above and is hopefully rendered with good colour contrast for WCAG.] mid-sentence footnote:[This is the second footnote from a sentence above and is hopefully rendered with good colour contrast for WCAG.].
@@ -33,4 +35,5 @@ This sentence should always start on a new page.
 
 This is a sentence with a PDF version span:pdf-version[1.3] as used in PDF specs. It hopefully expands to italic "__(PDF 1.3)__" in blue.
 
+Document attribute `:xrefstyle:` is {xrefstyle}. This sentence references other numbered headings, such as <<Smart_quoting>>, <<Horizontal_lines>>, and <<Testing_tables>>.
 
