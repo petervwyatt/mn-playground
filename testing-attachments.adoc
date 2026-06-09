@@ -13,8 +13,8 @@ Also test how files get embedded, and what differences `span:classification.pdf-
 h| **PDFDocEncoding** name | **PDFDocEncoding** value | Unicode codepoint | AsciiDoc
 | Breve | 024 dec | U+02D8 | &#x02db;
 | Caron | 025 dec | U+02c7 | &#x02c7;
-| Dagger | 129 | U+2020 | &#x2020;
-| Double dagger | 130 | U+2021 | &#x2021;
+| Dagger | 129 dec | U+2020 | &#x2020;
+| Double dagger | 130 dec | U+2021 | &#x2021;
 | __invalid!__ | - | U+44CA | &#x44CA;
 |===
 
