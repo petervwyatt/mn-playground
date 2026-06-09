@@ -1,7 +1,9 @@
-== Tables
+[[Testing_tables]]
+== Testing tables
 
 This tests table formatting. Due to zebra-stripping, rows are duplicated to test appearance for alternating rows. There are 2 header rows. See https://www.metanorma.org/author/topics/blocks/tables. This sentence also has a footnote footnote:[This is the footnote text from the first paragraph (not in the table).]
 
+[[table1]]
 .Title for table 1
 [role="sortable",headerrows=2,cols="a,a,a,a",alt=Alt text for table accessibility,summary=Summary text for table accessibility]
 |===
@@ -19,7 +21,7 @@ TIP: This is a tip inside a table cell. It also has a long sentence so it hopefu
 ----
 2 0 obj
 <<
-  /Key (some value) % comment
+  /KeyA (some value) % this is a very long PDF comment to see how wrapping of source code works with a table cell
 >>
 endobj
 ----
@@ -30,19 +32,20 @@ NOTE: This is a note inside a table cell. It has a long sentence so it hopefully
 
 WARNING: This is a warning inside a table cell. It also has a long sentence so it hopefully spans several lines.
 
-.Source block in a second table cell
-[source,pdf,keep-lines-together=true]
+.HTML source block in a second table cell
+[source,html,keep-lines-together=true]
 ----
-2 0 obj
-<<
-  /Key (some value) % comment
->>
-endobj
+<h1>Some heading</h1>
+<div>
+  <p style="font-size: 12pt; font-weight: normal;"><!-- this is a very long XML comment to see how wrapping of source code works with a table cell -->
+  This is a very long paragraph of text in HTML to see how wrapping of source code works with a table cell. It should be colourized by Rouge.
+  </p>
+</div>
 ----
 
 | Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures[title=Alt text for pqc URL via title attribute] in a cell.
 
-| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell without markup.
+| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell without any markup.
 
 |===
 
