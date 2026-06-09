@@ -23,13 +23,10 @@ Test predefined attribute-based markup for 123,456 decimal:
 
 // Hex = 1E240
 * number:123456[profile=hex]
-
 // Octal = 361 100
 * number:123456[profile=octal]
-
 // Binary = 0001 1110 0010 0100 0000. How to round up digits to multiple of 4 (padding with zeros)?
 * number:123456[profile=binary]
-
 // Unicode formatting: U+XXXX. Always 4 hex digits
 * number:12[profile=unicode]
 
