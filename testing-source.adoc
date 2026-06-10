@@ -100,7 +100,7 @@ endobj
 1 0 obj
 << /Length 123 >>
 stream
-\stem:[sum_(i=1)^n i^3=((n(n+1))/2)^2] }}}
+{{{ stem:[sum_(i=1)^n i^3=((n(n+1))/2)^2] }}}
 endstream
 endobj
 --
