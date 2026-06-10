@@ -15,79 +15,79 @@ CAUTION: This is a single-line caution admonition which is supported in both MN 
 
 WARNING: This is a single-line warning admonition which is supported in both MN and AsciiDoctor.
 
-=== Editor notes need a heading 
+=== Editor notes need a heading to render
 
 EDITOR: This is a single-line editor admonition which is only supported by MN.
 
-=== To-do notes need a heading 
+=== To-do notes need a heading  to render
 
 TODO: This is a single-line to-do admonition which is only supported by MN.
 
-Below this point are the block equivalents with captions immediately BELOW the block marker. 
+Below this point are the block equivalents with captions immediately ABOVE the block marker. 
 
-[NOTE]
 .Caption of note block
+[NOTE]
 ====
 This is a single-line note admonition which is supported in both MN and AsciiDoctor.
 ====
 
-[TIP,type=box]
 .Caption of boxed tip block
+[TIP,type=box]
 ====
 This is a single-line tip admonition which is supported in both MN and AsciiDoctor.
 ====
 
-[IMPORTANT]
 .Caption of important block
+[IMPORTANT]
 ====
 This is a single-line important admonition which is supported in both MN and AsciiDoctor.
 ====
 
-[TIP]
 .Caption of tip block
+[TIP]
 ====
 This is a single-line tip admonition which is supported in both MN and AsciiDoctor.
 ====
 
-[CAUTION]
 .Caption of caution block
+[CAUTION]
 ====
 This is a single-line caution admonition which is supported in both MN and AsciiDoctor.
 ====
 
-[WARNING]
 .Caption of warning block
+[WARNING]
 ====
 This is a block warning admonition with a caption which is supported in both MN and AsciiDoctor.
 ====
 
 === Editor notes need a heading 
 
-[EDITOR]
 .Caption of editor block
+[EDITOR]
 ====
 This is a block editor admonition with a caption which is only supported by MN.
 ====
 
 === To-do notes need a heading 
 
-[TODO]
 .Caption of to-do block
+[TODO]
 ====
 This is a block to-do admonition with a caption which is only supported by MN.
 ====
 
-[type=Danger]
 .Caption of danger block
+[type=Danger]
 ====
-This is a block danger admonition with a caption which is only supported by MN.
+This is an unspecified note block danger admonition with a caption which is only supported by MN.
 ====
 
-// As per MN documentation
-[WARNING,type=Safety Precaution]
+// As per MN documentation: https://www.metanorma.org/author/topics/blocks/admonitions/#specifying-danger-and-safety
 .Caption of safety precaution block
+[CAUTION,type=Safety-Precaution]
 ====
-This is a block danger admonition with a caption which is only supported by MN.
+This is a caution block admonition with type attribute of "Safety Precautions" with a caption - only supported by MN.
 ====
 
 .Caption before example block (both)
