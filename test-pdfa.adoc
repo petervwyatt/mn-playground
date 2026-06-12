@@ -7,6 +7,7 @@
 :version: 1.2.3
 :edition: 4.5
 :created-date: 2025-04
+:revdate: 2026-06
 :copyright-year: 2025
 :language: en
 :mn-document-class: pdfa
@@ -49,10 +50,10 @@
 :toclevels: 4
 :docinfo: shared
 :source-highlighter: rouge
-:number-presentation-profile-hex:     base=16,group=' ',group_digits=4,hex_capital=true,base_postfix='h'
-:number-presentation-profile-octal:   base=8,base_prefix='\',group='\',group_digits=3,
-:number-presentation-profile-binary:  base=2,group=' ',group_digits=4,base_postfix='b'
-:number-presentation-profile-unicode: base=16,base_prefix='U+',hex_capital=true,significant=4
+:number-presentation-profile-hex-bytes: base=16, base_prefix='(',  base_postfix='h)', group='h ', group_digits=2, padding_group_digits=2, hex_capital=true, significant=2
+:number-presentation-profile-octal:     base=8, base_prefix='\',                      group='\',  group_digits=3, padding_group_digits=3
+:number-presentation-profile-binary:    base=2,                    base_postfix='b',  group=' ',  group_digits=4, padding_group_digits=8
+:number-presentation-profile-unicode:   base=16, base_prefix='U+',                    group='',                   padding_group_digits=4, hex_capital=true, significant=4 
 
 ifeval::[{mn-document-class} == "pdfa"]
 :is-pdfa:
