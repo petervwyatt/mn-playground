@@ -27,6 +27,10 @@ Here is the first mention of the <<SomeSpec, custom bibliographic entry>>. And h
 [bibliography]
 == Bibliography
 
+// Testing for https://github.com/relaton/relaton-iso/issues/181
+ * [[[ISO32000_2_AMD1,ISO 32000-2:2020/DAmd 1]]]
+
+
 
 // Testing of notes related to bibliographic entries. See https://www.metanorma.org/author/topics/sections/bibliography/
 // Notes need to be "span:note.display[...]" to render!!!
