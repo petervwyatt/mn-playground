@@ -31,6 +31,10 @@ Here is the first mention of the <<SomeSpec, custom bibliographic entry>>. And h
  * [[[ISO32000_2_AMD1,ISO 32000-2:2020/DAmd 1]]]
 
 
+* [[[IEC_61966_2_1,IEC 61966-2-1]]]
+
+* [[[IEC_61966_2_1_AMD1,IEC 61966-2-1:1999/AMD1:2003]]]
+
 
 // Testing of notes related to bibliographic entries. See https://www.metanorma.org/author/topics/sections/bibliography/
 // Notes need to be "span:note.display[...]" to render!!!
