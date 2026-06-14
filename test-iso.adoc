@@ -75,6 +75,7 @@ ifeval::[{mn-document-class} == "iso"]
 endif::[]
 
 include::testing-preface.adoc[]
+include::testing-td.adoc[]
 include::testing-spans.adoc[]
 include::testing-numbers.adoc[]
 include::testing-source.adoc[]

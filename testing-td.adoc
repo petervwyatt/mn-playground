@@ -1,0 +1,23 @@
+== Terms and definitions
+
+=== Terms and definitions
+
+// Testing rendered appearance of T&Ds, preferred and alternate terms
+
+==== end-of-data marker
+preferred:[EOD marker]
+alt:[EOD]
+
+one or more bytes that indicate the end of data has been reached 
+
+[glossary]
+=== Abbreviated terms
+
+// Testing appearance and indexing(!!) of abbreviated terms
+
+[glossary]
+AA::      additional actions
+AES::     Advanced Encryption Standard
+AF::      Associated File
+
+

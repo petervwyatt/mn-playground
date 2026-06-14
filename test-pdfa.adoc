@@ -68,6 +68,7 @@ endif::[]
 // :iteration: - only applies to :status: release-candidate
 
 include::testing-preface.adoc[]
+include::testing-td.adoc[]
 include::testing-spans.adoc[]
 include::testing-numbers.adoc[]
 include::testing-source.adoc[]
