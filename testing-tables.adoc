@@ -66,26 +66,6 @@ This is a paragraph of normal text after the table. This is a paragraph of norma
 
 == Testing a layout table
 
-// Copied from https://docs.asciidoctor.org/asciidoc/latest/macros/image-size/
-ifdef::backend-html5[]
-:twoinches: width=144
-// using a role requires adding a corresponding rule to the CSS
-:full-width: role=full-width
-:half-width: role=half-width
-:half-size: role=half-size
-:thumbnail: width=60
-endif::[]
-
-ifdef::backend-pdf[]
-:twoinches: pdfwidth=2in
-// NOTE use pdfwidth=100vw to make the image stretch edge to edge
-:full-width: pdfwidth=100%
-:half-width: pdfwidth=50%
-// NOTE scale is not yet supported by the PDF converter
-:half-size: pdfwidth=50%
-:thumbnail: pdfwidth=20mm
-endif::[]
-
 <<table2>> tests a layout table for sub-figure inline images
 
 [[table2]]
@@ -95,19 +75,27 @@ endif::[]
 
 |
 .Row A, Column A
-image:test-cover.png[alt=some alt text,title=Brotli logo,{half-width}] 
+
+
+image:test-cover.png[alt=some alt text,title=Brotli logo,width=text-width] 
 
 |
 .Row 1, Coumn B
-image:Letter_T.png[alt=some alt text for T,{half-width}]
+
+
+image:Letter_T.png[alt=some alt text for T,width=text-width]
 
 |
 .Row 2, Column A
-image:Letter_T.png[alt=some alt text for T,{half-width}]
+
+
+image:Letter_T.png[alt=some alt text for T,width=text-width]
 
 |
 .Row 2, Column B
-image:test-cover.png[alt=some alt text,title=Brotli logo,{half-width}]
+
+
+image:test-cover.png[alt=some alt text,title=Brotli logo,width=text-width]
 
 |===
 
