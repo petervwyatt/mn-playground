@@ -10,7 +10,7 @@ This tests table formatting. Due to zebra-stripping, rows are duplicated to test
 .2+|Sample 3+^| Formatting
 | _Italic_ | *Bold* | `Monspaced`
 
-| *Bold* | text | name a| Some text in a sentence with a footnote footnote:[This is the first table footnote text.].
+| *Bold* | text | name a| Some text in a sentence with a footnote with blank {blank}footnote:[This is the first table footnote text preceded by blank.].
 
 NOTE: This is a note inside a table cell. It has a long sentence so it hopefully spans several lines.
 
@@ -26,7 +26,7 @@ TIP: This is a tip inside a table cell. It also has a long sentence so it hopefu
 endobj
 ----
 
-| *Bold* | text | name a| Some text in a sentence with a second footnote footnote:[This is the second table footnote text.]
+| *Bold* | text | name a| Some text in a sentence with a second footnote with empty {empty}footnote:[This is the second table footnote text preceded by empty.]
 
 NOTE: This is a note inside a table cell. It has a long sentence so it hopefully spans several lines.
 
@@ -62,5 +62,53 @@ This is yet another note but done as a block. It _is_ marked as `keep-separate=t
 ====
 
 This is a paragraph of normal text after the table. This is a paragraph of normal text after the table. This is a paragraph of normal text after the table. This is a paragraph of normal text after the table.
+
+
+== Testing a layout table
+
+// Copied from https://docs.asciidoctor.org/asciidoc/latest/macros/image-size/
+ifdef::backend-html5[]
+:twoinches: width=144
+// using a role requires adding a corresponding rule to the CSS
+:full-width: role=full-width
+:half-width: role=half-width
+:half-size: role=half-size
+:thumbnail: width=60
+endif::[]
+
+ifdef::backend-pdf[]
+:twoinches: pdfwidth=2in
+// NOTE use pdfwidth=100vw to make the image stretch edge to edge
+:full-width: pdfwidth=100%
+:half-width: pdfwidth=50%
+// NOTE scale is not yet supported by the PDF converter
+:half-size: pdfwidth=50%
+:thumbnail: pdfwidth=20mm
+endif::[]
+
+<<table2>> tests a layout table for sub-figure inline images
+
+[[table2]]
+.2x2 layout table
+[cols="1,1",frame=none,grid=none,stripes=none]
+|===
+
+|
+.Row A, Column A
+image:test-cover.png[alt=some alt text,title=Brotli logo,{half-width}] 
+
+|
+.Row 1, Coumn B
+image:Letter_T.png[alt=some alt text for T,{half-width}]
+
+|
+.Row 2, Column A
+image:Letter_T.png[alt=some alt text for T,{half-width}]
+
+|
+.Row 2, Column B
+image:test-cover.png[alt=some alt text,title=Brotli logo,{half-width}]
+
+|===
 
 
