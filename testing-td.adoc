@@ -1,5 +1,6 @@
 == Terms and definitions
 
+[source=ISO32Kb]
 === Terms and definitions
 
 // Testing rendered appearance of T&Ds, preferred and alternate terms
@@ -10,14 +11,18 @@ alt:[EOD]
 
 one or more bytes that indicate the end of data has been reached 
 
+
 [glossary]
-=== Abbreviated terms
+=== Symbols and abbreviated terms
 
 // Testing appearance and indexing(!!) of abbreviated terms
 
 [glossary]
+stem:[alpha_(cs)]::  source alpha
+stem:[alpha_(bkg)]::  background alpha
 AA::      additional actions
-AES::     Advanced Encryption Standard
 AF::      Associated File
+EOD::     end of data duplicate term
+EOF::     end of file
 
 

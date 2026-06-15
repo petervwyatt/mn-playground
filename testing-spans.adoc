@@ -27,11 +27,11 @@ This is a sentence with a span:requirement[shall] requirement and a span:recomme
 This is a sentence with a span:recommendation[should] recommendation. A forced page break is below this sentence.
 See https://docs.asciidoctor.org/asciidoc/latest/blocks/breaks/[].
 
-// Forced page break
+// Forced page break in PDF
 [%always]
 <<<
 
-This sentence should always start on a new page.
+This sentence should always start on a new page in PDF.
 
 === Heading H3 first
 
@@ -51,10 +51,10 @@ Document attribute `:xrefstyle:` is {xrefstyle}. This sentence references other 
 
 Some test referencing the full term {{end-of-data marker}}.
 
-More test referencing a preferred term {{EOD marker}}.
+More test referencing a preferred term {{EOD marker}}. This is mentioned using `term` term:[EOD marker].
 
 ==== Heading H4 second
 
-Again, more test referencing the alt term this time {{EOD}}.
+Again, more test referencing the alt term this time {{EOD}}. This is mentioned using `term` term:[EOD] and `symbol` symbol:[EOD].
 
 
