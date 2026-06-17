@@ -237,3 +237,5 @@ startxref
 %%EOF
 ----
 
+Random mention of ((zebra-striping)) for indexing.
+
