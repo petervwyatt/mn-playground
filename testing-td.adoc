@@ -13,16 +13,22 @@ one or more bytes that indicate the end of data has been reached
 
 
 [glossary]
-=== Symbols and abbreviated terms
+=== Abbreviated terms
 
-// Testing appearance and indexing(!!) of abbreviated terms
+// Testing appearance and indexing(!!) of symbols and abbreviated terms
 
 [glossary]
-stem:[alpha_(cs)]::  source alpha
-stem:[alpha_(bkg)]::  background alpha
 AA::      additional actions
 AF::      Associated File
 EOD::     end of data duplicate term
 EOF::     end of file
+
+[glossary]
+=== Symbols
+
+[glossary]
+stem:[alpha_(cs)]::  source alpha
+stem:[alpha_(bkg)]:: background alpha
+RGB::                red blue green
 
 
