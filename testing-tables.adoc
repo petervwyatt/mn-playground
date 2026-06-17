@@ -1,7 +1,9 @@
 [[Testing_tables]]
 == Testing tables
 
-This tests table formatting. Due to zebra-stripping, rows are duplicated to test appearance for alternating rows. There are 2 header rows. See https://www.metanorma.org/author/topics/blocks/tables. This sentence also has a footnote footnote:[This is the footnote text from the first paragraph (not in the table).]
+=== Table styling
+
+This tests table formatting. Due to ((zebra-striping)), rows are duplicated to test appearance for alternating rows. There are 2 header rows. See https://www.metanorma.org/author/topics/blocks/tables. This sentence also has a footnote footnote:[This is the footnote text from the first paragraph (not in the table).]
 
 [[table1]]
 .Title for table 1
@@ -64,38 +66,42 @@ This is yet another note but done as a block. It _is_ marked as `keep-separate=t
 This is a paragraph of normal text after the table. This is a paragraph of normal text after the table. This is a paragraph of normal text after the table. This is a paragraph of normal text after the table.
 
 
-== Testing a layout table
+=== Testing a layout table
 
-<<table2>> tests a layout table for sub-figure inline images
+<<table2>> tests a layout table for sub-figure block images with titles.
 
 [[table2]]
 .2x2 layout table
-[cols="1,1",frame=none,grid=none,stripes=none]
+[cols="a,a",frame=none,grid=none,stripes=none]
 |===
 
 |
-.Row A, Column A
-
-
-image:test-cover.png[alt=some alt text,title=Brotli logo,width=text-width] 
+.Row 1, Column A
+[figure,width=text-width]
+====
+image::test-cover.png[alt=some A1 alt text,title=A1] 
+====
 
 |
 .Row 1, Coumn B
-
-
-image:Letter_T.png[alt=some alt text for T,width=text-width]
+[figure,width=text-width]
+====
+image::PDFaLogo.png[alt=some A2 alt text for T,title=B1]
+====
 
 |
 .Row 2, Column A
-
-
-image:Letter_T.png[alt=some alt text for T,width=text-width]
+[figure,width=text-width]
+====
+image::Letter_T.png[alt=some B1 alt text for T,title=A2]
+====
 
 |
 .Row 2, Column B
-
-
-image:test-cover.png[alt=some alt text,title=Brotli logo,width=text-width]
+[figure,width=text-width]
+====
+image::test-cover.png[alt=some B2 alt text,title=B2]
+====
 
 |===
 
