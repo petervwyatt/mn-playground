@@ -1,0 +1,19 @@
+[appendix,obligation=normative]
+== Heading of the normative annex
+
+Some normative text. See https://www.metanorma.org/author/topics/sections/annexes/. A random mention of term {{EOD marker}} for indexing.
+
+
+
+[appendix,obligation=informative]
+== Heading of the informative annex
+
+=== First subheading in 2nd annex
+
+Some informative text. A random mention of symbol {{RGB}} for indexing.
+
+=== Second subheading in 2nd annex
+
+Some more informative text. A random mention of term {{EOD}} for indexing.
+
+
