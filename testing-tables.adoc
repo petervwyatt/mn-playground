@@ -6,11 +6,11 @@
 This tests table formatting. Due to ((zebra-striping)), rows are duplicated to test appearance for alternating rows. There are 2 header rows. See https://www.metanorma.org/author/topics/blocks/tables. This sentence also has a footnote footnote:[This is the footnote text from the first paragraph (not in the table).]
 
 [[table1]]
-.Title for table 1
+.Title for table 1 **bold** __italic__ `mono`
 [role="sortable",headerrows=2,cols="a,a,a,a",alt=Alt text for table accessibility,summary=Summary text for table accessibility]
 |===
 .2+|Sample 3+^| Formatting
-| _Italic_ | *Bold* | `Monspaced`
+| _Italic_ | *Bold* | `Monospaced`
 
 | *Bold* | text | name a| Some text in a sentence with a footnote with blank {blank}footnote:[This is the first table footnote text preceded by blank.].
 
@@ -18,7 +18,7 @@ NOTE: This is a note inside a table cell. It has a long sentence so it hopefully
 
 TIP: This is a tip inside a table cell. It also has a long sentence so it hopefully spans several lines.
 
-.Source block in a table cell
+.Source block in a table cell with **bold** __italic__ `mono`
 [source,pdf,keep-lines-together=true]
 ----
 2 0 obj
@@ -91,14 +91,14 @@ image::PDFaLogo.png[alt=some A2 alt text for T,title=B1]
 
 |
 .Row 2, Column A
-[figure,width=text-width]
+[figure%unnumbered,width=text-width]
 ====
 image::Letter_T.png[alt=some B1 alt text for T,title=A2]
 ====
 
 |
 .Row 2, Column B
-[figure,width=text-width]
+[figure%unnumbered,width=text-width]
 ====
 image::test-cover.png[alt=some B2 alt text,title=B2]
 ====
