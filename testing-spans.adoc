@@ -37,15 +37,15 @@ This sentence should always start on a new page in PDF.
 
 ==== Heading H4 first
 
-===== Heading H5 first
+===== Heading H5 first with **bold**
 
-====== Heading H6 first
+====== Heading H6 first with `mono`
 
 This is a sentence with a PDF version span:pdf-version[1.3] as used in PDF specs. It hopefully expands to italic "__(PDF 1.3)__" in blue.
 
 Here is some text using different semantic spans, such as PDF keywords span:pdf-keyword[true] / span:pdf-keyword[false], span:pdf-keyword[stream] / span:pdf-keyword[endstream] and span:pdf-keyword[null].
 
-====== Heading H6 second but a very very long heading to hopefully trigger line wrapping of lengthy heading text
+====== Heading H6 second but a __very very__ long heading to hopefully trigger line wrapping of lengthy heading text
 
 Document attribute `:xrefstyle:` is {xrefstyle}. This sentence references other numbered headings, such as <<Smart_quoting>>, <<Horizontal_lines>>, and <<Testing_tables>>.
 
@@ -55,11 +55,16 @@ Here is some different text using semantic spans for PDF operators, such as PDF 
 
 Some test referencing the full term {{end-of-data marker}}.
 
+* Bullet list depth 1
+** Bullet list depth 2
+*** Bullet list depth 3
+**** Bullet list depth 4
+
 More test referencing a preferred term {{EOD marker}}. This is mentioned using `term` term:[EOD marker].
 
 ==== Heading H4 second
 
 Again, more test referencing the alt term this time {{EOD}}. 
-This is mentioned using `term` term:[EOD] and `symbol` symbol:[RGB] and symbol:[stem:[alpha_(cs)]].
+This is mentioned using `term` term:[EOD] and `symbol`s symbol:[RGB] and symbol:[stem:[alpha_(cs)]].
 
 
