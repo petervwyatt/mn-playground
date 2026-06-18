@@ -1,9 +1,8 @@
 source "https://rubygems.org"
 
 gem "metanorma-cli"
-gem "metanorma-standoc", git: "https://github.com/metanorma/metanorma-standoc", branch: "main"
-gem "metanorma-taste", git: "https://github.com/metanorma/metanorma-taste", branch: "main"
-gem "metanorma-ribose", git: "https://github.com/metanorma/metanorma-ribose", branch: "main"
+gem "metanorma-taste", git: "https://github.com/metanorma/metanorma-taste", tag: "v1.0.8"
+gem "metanorma-ribose", git: "https://github.com/metanorma/metanorma-ribose", tag: "v2.8.7"
 gem "plurimath", git: "https://github.com/plurimath/plurimath", branch: "main"
 gem "asciidoctor-pdf"
 # gem "rouge", "~> 5.0.0"
