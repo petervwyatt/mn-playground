@@ -33,6 +33,7 @@
 :toc-figures: true
 :toc-tables: true
 :toc-requirements: true
+:toc-examples: true
 :clause-term: chapter
 :clauses-term: chapters
 :sub-clause-term: sub-section
