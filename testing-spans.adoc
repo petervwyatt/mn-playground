@@ -49,6 +49,10 @@ Here is some text using different semantic spans, such as PDF keywords span:pdf-
 
 Document attribute `:xrefstyle:` is {xrefstyle}. This sentence references other numbered headings, such as <<Smart_quoting>>, <<Horizontal_lines>>, and <<Testing_tables>>.
 
+A:: Definition list item for A
+B:: Definition list item for B
+C:: Definition list item for C
+
 Here is some different text using semantic spans for PDF operators, such as PDF keywords span:pdf-keyword[RG] / span:pdf-keyword[eg], span:pdf-keyword[cm], and span:pdf-keyword[Do]. 
 
 ===== Heading H5 second
