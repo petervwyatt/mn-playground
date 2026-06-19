@@ -49,6 +49,54 @@ WARNING: This is a warning inside a table cell. It also has a long sentence so i
 
 | Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell without any markup.
 
+| *Bla Blah* | text | name a| Some generic opening text in a sentence in a table cell. This cell needs to be repeated to test with zebra-striping.
+
+CAUTION: This is a caution inside a table cell. It has a long sentence so it hopefully wrap and span more than one line.
+
+.An example in a table cell
+[example]
+====
+This is random text within the example before some source code block
+
+.Source block in a table cell with **bold** __italic__ `mono` in example block
+[source,pdf,keep-lines-together=true]
+----
+2 0 obj
+<<
+  /KeyA (some value) % this is a very long PDF comment to see how wrapping of source code works with a table cell
+>>
+endobj
+----
+
+NOTE: Note within the example
+====
+
+And the final sentence of the example in a table cell.
+
+| *Blah Bla* | text | name a| Some generic opening text in a sentence in a table cell. This cell needs to be repeated to test with zebra-striping.
+
+CAUTION: This is a caution inside a table cell. It has a long sentence so it hopefully wrap and span more than one line.
+
+.An example in a table cell
+[example]
+====
+This is random text within the example before some source code block
+
+.Source block in a table cell with **bold** __italic__ `mono` in example block
+[source,pdf,keep-lines-together=true]
+----
+2 0 obj
+<<
+  /KeyA (some value) % this is a very long PDF comment to see how wrapping of source code works with a table cell
+>>
+endobj
+----
+
+NOTE: Note within the example
+====
+
+And the final sentence of the example in a table cell.
+
 |===
 
 NOTE: This is a simple table note because it is not marked as `keep-separate`.
@@ -79,28 +127,28 @@ This is a paragraph of normal text after the table. This is a paragraph of norma
 .Row 1, Column A
 [figure,width=text-width]
 ====
-image::test-cover.png[alt=some A1 alt text,title=A1] 
+image::test-cover.png[alt=some A1 alt text,title=title A1] 
 ====
 
 |
 .Row 1, Coumn B
 [figure,width=text-width]
 ====
-image::PDFaLogo.png[alt=some A2 alt text for T,title=B1]
+image::PDFaLogo.png[alt=some A2 alt text for T,title=title B1]
 ====
 
 |
 .Row 2, Column A
 [figure%unnumbered,width=text-width]
 ====
-image::Letter_T.png[alt=some B1 alt text for T,title=A2]
+image::Letter_T.png[alt=some B1 alt text for T,title=title A2]
 ====
 
 |
 .Row 2, Column B
 [figure%unnumbered,width=text-width]
 ====
-image::test-cover.png[alt=some B2 alt text,title=B2]
+image::test-cover.png[alt=some B2 alt text,title=title B2]
 ====
 
 |===
