@@ -27,7 +27,7 @@ EOF::     end of file
 === Symbols
 
 [glossary]
-stem:[alpha_(cs)]::  source alpha
+stem:[alpha_(cs) + alpha_(de)]::  source alpha
 stem:[alpha_(bkg)]:: background alpha
 RGB::                red blue green
 
