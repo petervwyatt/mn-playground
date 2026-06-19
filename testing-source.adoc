@@ -8,7 +8,7 @@ ifdef::source-linenums-option[* `:source-linenums-option:` is set to `{source-li
 
 Here are source code blocks with an inline image and `subs="verbatim,macros"`. 
 
-.Title for exmple block
+.Title for an example block
 [example]
 ====
 This is the first line of text in an example block, which includes the source code block below.
@@ -22,6 +22,8 @@ This is the first line of text in an example block, which includes the source co
     </image>
 </P>
 ----
+
+Line of text between source code blocks.
 
 .Title for source XML block inside example with `subs="macros"`
 [source,xml,subs="macros"]
