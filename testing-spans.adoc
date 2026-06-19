@@ -69,6 +69,6 @@ More test referencing a preferred term {{EOD marker}}. This is mentioned using `
 ==== Heading H4 second
 
 Again, more test referencing the alt term this time {{EOD}}. 
-This is mentioned using `term` term:[EOD] and `symbol`s symbol:[RGB] and symbol:[stem:[alpha_(cs)]].
+This is mentioned using `term` term:[EOD] and `symbol`s symbol:[RGB] and symbol:[stem:[alpha_(bkg)]].
 
 
