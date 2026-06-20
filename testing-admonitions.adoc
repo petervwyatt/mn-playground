@@ -37,10 +37,16 @@ Below this point are the block equivalents with captions immediately ABOVE the b
 This is a single-line note admonition which is supported in both MN and AsciiDoctor.
 ====
 
-.Caption of boxed tip block
-[TIP,type=box]
+.Caption of boxed important block
+[IMPORTANT,type=box]
 ====
-This is a single-line tip admonition which is supported in both MN and AsciiDoctor.
+This is a single-line important admonition which is supported in both MN and AsciiDoctor. The `type=` property overrides the "TIP" so markup only has a single "box" type.
+====
+
+.Caption of XXXX block
+[IMPORTANT,type=XXXX]
+====
+This is a single-line admonition of type "XXXX" which is unsupported. Does the custom `type=` property end up in the XML?
 ====
 
 .Caption of important block
@@ -109,20 +115,20 @@ This is a caution block admonition with type attribute of "Safety Precautions" w
 ====
 
 .Caption before example block (both)
-[example]
+[example%collapsible]
 .Caption after example block (both)
 ====
 This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
 ====
 
-[example]
+[example%collapsible]
 .Caption only after example block
 ====
 This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
 ====
 
 .Caption only before example block
-[example]
+[example%collapsible]
 ====
 This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
 ====

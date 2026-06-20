@@ -9,7 +9,7 @@ ifdef::source-linenums-option[* `:source-linenums-option:` is set to `{source-li
 Here are source code blocks with an inline image and `subs="verbatim,macros"`. 
 
 .Title for an example block
-[example]
+[example%collapsible]
 ====
 This is the first line of text in an example block, which includes the source code block below.
 

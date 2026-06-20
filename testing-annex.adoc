@@ -4,7 +4,7 @@
 Some normative text. See https://www.metanorma.org/author/topics/sections/annexes/. A random mention of term {{EOD marker}} for indexing.
 
 
-
+[[annex_B]]
 [appendix,obligation=informative]
 == Heading of the informative annex
 

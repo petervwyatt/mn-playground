@@ -8,6 +8,7 @@ This is the special prefactory clause text, indicated by both heading text and b
 
 This is a different prefactory clause that should be unnumbered but with prefactory markup.
 
+[[preface_notation]]
 [.preface]
 == Notation
 

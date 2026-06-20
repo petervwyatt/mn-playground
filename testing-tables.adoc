@@ -54,7 +54,7 @@ WARNING: This is a warning inside a table cell. It also has a long sentence so i
 CAUTION: This is a caution inside a table cell. It has a long sentence so it hopefully wrap and span more than one line.
 
 .An example in a table cell
-[example]
+[example%collapsible]
 ====
 This is random text within the example before some source code block
 
@@ -78,7 +78,7 @@ And the final sentence of the example in a table cell.
 CAUTION: This is a caution inside a table cell. It has a long sentence so it hopefully wrap and span more than one line.
 
 .An example in a table cell
-[example]
+[example%collapsible]
 ====
 This is random text within the example before some source code block
 
@@ -116,7 +116,7 @@ This is a paragraph of normal text after the table. This is a paragraph of norma
 
 === Testing a layout table
 
-<<table2>> tests a layout table for sub-figure block images with titles.
+Citation to table below: <<table2>> tests a layout table for sub-figure block images with titles.
 
 [[table2]]
 .2x2 layout table
@@ -153,4 +153,5 @@ image::test-cover.png[alt=some B2 alt text,title=title B2]
 
 |===
 
+Random mention of term {{((EOD))}} for indexing purposes.
 

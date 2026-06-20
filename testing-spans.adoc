@@ -1,3 +1,4 @@
+[[formatted_heading]]
 == Testing of `spans` __and__ **formatting**
 
 The H1 heading above should have backtick (code), italic, and bold formatting applied (in that order). Check in both text body and navigation menus.
@@ -31,11 +32,12 @@ See https://docs.asciidoctor.org/asciidoc/latest/blocks/breaks/[].
 [%always]
 <<<
 
-This sentence should always start on a new page in PDF.
+This sentence should always start on a new page in PDF. The following headings have explicit char formatting and semantic spans. This is a citation to to a top level - see <<formatted_heading>>.
 
-=== Heading H3 first but a very very long heading to hopefully trigger line wrapping of lengthy heading text
+[[long_H3]]
+=== Heading H3 first but a _very very_ *long* heading to hopefully `trigger` line wrapping of lengthy heading text
 
-==== Heading H4 first
+==== Heading H4 first span:pdf-operator[pdf-op]
 
 ===== Heading H5 first with **bold**
 
@@ -55,20 +57,23 @@ C:: Definition list item for C
 
 Here is some different text using semantic spans for PDF operators, such as PDF keywords span:pdf-keyword[RG] / span:pdf-keyword[eg], span:pdf-keyword[cm], and span:pdf-keyword[Do]. 
 
-===== Heading H5 second
+===== Heading H5 second with _italic_
 
-Some test referencing the full term {{end-of-data marker}}.
+Some test referencing the full term {{end-of-data marker}}. This is a citation to the second appendix - see <<annex_B>>. 
 
 * Bullet list depth 1
 ** Bullet list depth 2
 *** Bullet list depth 3
-**** Bullet list depth 4
+**** Bullet list depth 4 - we should never go here!
+***** Bullet list depth 5 - we should never go here!
+****** Bullet list depth 6 - we should never go here!
 
-More test referencing a preferred term {{EOD marker}}. This is mentioned using `term` term:[EOD marker].
+More test referencing a preferred term {{((EOD marker))}} that is _internally_ wrapped for indexing. This is mentioned using `term` term:[EOD marker]. This is mentioned using `term` with internal wrapping for indexing term:[((EOD marker))]. CANNOT do outer index wrapping of terms or `term` as this causes MN errors "_Empty index term: ..._".
 
-==== Heading H4 second
+==== Heading H4 second span:pdf-keyword[keyword]
 
-Again, more test referencing the alt term this time {{EOD}}. 
-This is mentioned using `term` term:[EOD] and `symbol`s symbol:[RGB] and symbol:[stem:[alpha_(bkg)]].
+Again, more test referencing the alt term this time with external indexing {{((EOD))}}. 
+This is mentioned using `term` with external indexing term:[((EOD))] and `symbol`s symbol:[RGB] and symbol:[stem:[alpha_(bkg)]]. This is a citation to a long H3 with formatting - see <<long_H3>>.
+This is a citation to a preface heading - see <<preface_notation>>. 
 
 
