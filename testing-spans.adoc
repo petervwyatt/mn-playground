@@ -76,4 +76,12 @@ Again, more test referencing the alt term this time with external indexing {{((E
 This is mentioned using `term` with external indexing term:[((EOD))] and `symbol`s symbol:[RGB] and symbol:[stem:[alpha_(bkg)]]. This is a citation to a long H3 with formatting - see <<long_H3>>.
 This is a citation to a preface heading - see <<preface_notation>>. 
 
+Testing of when "x" is auto-converted to stem:[xx] when a digit is immediately either side - what markup is needed to stop this auto-conversion?:
+
+* 0x0 - no spaces around "x"
+* 0 x 0 - space either side of "x"
+* 0x 0 - space after "x"
+* 0 x0 - space before "x"
+* 0x\0 - use of `\0` after "x"
+
 
