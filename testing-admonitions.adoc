@@ -9,6 +9,7 @@ NOTE: This is a single-line note admonition which is supported in both MN and As
 
 TIP: This is a single-line tip admonition which is supported in both MN and AsciiDoctor.
 
+.Important - Can inline admonitions have captions?
 IMPORTANT: This is a single-line important admonition which is supported in both MN and AsciiDoctor.
 
 CAUTION: This is a single-line caution admonition which is supported in both MN and AsciiDoctor.
@@ -81,7 +82,6 @@ This is a block warning admonition with a caption which is supported in both MN 
 This is a block editor admonition with a caption which is only supported by MN. It renders as a PDF sticky note annotation.
 
 This is a second paragraph in an editor block admonition to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
-
 ====
 
 A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
@@ -98,10 +98,10 @@ This is a second paragraph in a to-do block admonition to check inter-paragraph 
 
 A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
 
-.Caption of danger block
+.Caption of `type=danger` block
 [type=Danger]
 ====
-This is an unspecified note block danger admonition with a caption which is only supported by MN.
+This is an unspecified note block danger admonition with explicit `type=Danger` property and a caption which is only supported by MN.
 
 This is a second paragraph in a danger block admonition to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
