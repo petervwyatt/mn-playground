@@ -23,17 +23,7 @@ This is the first line of text in an example block, which includes the source co
 </P>
 ----
 
-Line of text between source code blocks.
-
-.Title for source XML block inside example with `subs="macros"`
-[source,xml,subs="macros"]
-----
-<P>
-    <image data="using inline `image:`">
-      Text before. {{{image:Letter_T.png[Some alt text]}}}ext after.
-    </image>
-</P>
-----
+The above test was resolved by https://github.com/metanorma/metanorma-pdfa/issues/42#issuecomment-4753219328[this Github issue]. This is also some lines of text between source code blocks.
 
 .Another title for source HTML block inside example but no `subs` attribute
 [source,html]
