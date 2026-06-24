@@ -37,7 +37,7 @@ This sentence should always start on a new page in PDF. The following headings h
 [[long_H3]]
 === Heading H3 first but a _very very_ *long* heading to hopefully `trigger` line wrapping of lengthy heading text
 
-==== Heading H4 first span:pdf-operator[pdf-op]
+==== Heading H4 first span:pdf-operator[((pdf-op))]
 
 ===== Heading H5 first with **bold**
 
@@ -45,7 +45,9 @@ This sentence should always start on a new page in PDF. The following headings h
 
 This is a sentence with a PDF version span:pdf-version[1.3] as used in PDF specs. It hopefully expands to italic "__(PDF 1.3)__" in blue.
 
-Here is some text using different semantic spans, such as PDF keywords span:pdf-keyword[true] / span:pdf-keyword[false], span:pdf-keyword[stream] / span:pdf-keyword[endstream] and span:pdf-keyword[null].
+Here is some text using different semantic spans, such as PDF keywords span:pdf-keyword[true] / span:pdf-keyword[false], span:pdf-keyword[stream] / span:pdf-keyword[((endstream))] and span:pdf-keyword[null].
+
+Here is a PDF operator semantic span that is also in the index span:pdf-operator[((pdf-op))]. 
 
 ====== Heading H6 second but a __very very__ long heading to hopefully trigger line wrapping of lengthy heading text
 
