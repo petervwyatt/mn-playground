@@ -27,7 +27,7 @@ text, fonts, vector graphics, raster images and other information needed to disp
 
 === To-do notes need a heading to render
 
-TODO: This is a single-line to-do admonition which is only supported by MN.
+TODO: This is a single-line to-do admonition which is only supported by MN. It renders as a PDF sticky note annotation.
 
 Below this point are the block equivalents with captions immediately ABOVE the block marker. 
 
@@ -46,7 +46,7 @@ This is a single-line important admonition which is supported in both MN and Asc
 .Caption of XXXX block
 [IMPORTANT,type=XXXX]
 ====
-This is a single-line admonition of type "XXXX" which is unsupported. Does the custom `type=` property end up in the XML?
+This is a single-line admonition of type "XXXX" which is unsupported. This custom `type=` property ends up in the XML so can be custom formatted.
 ====
 
 .Caption of important block
@@ -78,14 +78,13 @@ This is a block warning admonition with a caption which is supported in both MN 
 .Caption of editor block
 [EDITOR]
 ====
-This is a block editor admonition with a caption which is only supported by MN.
+This is a block editor admonition with a caption which is only supported by MN. It renders as a PDF sticky note annotation.
+
+This is a second paragraph in an editor block admonition to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
+
 ====
 
-A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as
-ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting
-and images, in a manner independent of application software, hardware, and operating systems. Based on the
-PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the
-text, fonts, vector graphics, raster images and other information needed to display it.
+A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
 
 === To-do notes need a heading 
 
@@ -93,18 +92,18 @@ text, fonts, vector graphics, raster images and other information needed to disp
 [TODO]
 ====
 This is a block to-do admonition with a caption which is only supported by MN.
+
+This is a second paragraph in a to-do block admonition to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
 
-A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as
-ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting
-and images, in a manner independent of application software, hardware, and operating systems. Based on the
-PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the
-text, fonts, vector graphics, raster images and other information needed to display it.
+A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
 
 .Caption of danger block
 [type=Danger]
 ====
 This is an unspecified note block danger admonition with a caption which is only supported by MN.
+
+This is a second paragraph in a danger block admonition to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
 
 // As per MN documentation: https://www.metanorma.org/author/topics/blocks/admonitions/#specifying-danger-and-safety
@@ -112,6 +111,8 @@ This is an unspecified note block danger admonition with a caption which is only
 [CAUTION,type=Safety-Precaution]
 ====
 This is a caution block admonition with type attribute of "Safety Precautions" with a caption - only supported by MN.
+
+This is a second paragraph in a safety precaution block admonition to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
 
 .Caption before example block (both)
@@ -119,24 +120,26 @@ This is a caution block admonition with type attribute of "Safety Precautions" w
 .Caption after example block (both)
 ====
 This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
+
+This is a second paragraph in an example block to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
 
 [example%collapsible]
 .Caption only after example block
 ====
 This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
+
+This is a second paragraph in an example block to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
 
 .Caption only before example block
 [example%collapsible]
 ====
 This is an example block with a caption which is supported in both MN and AsciiDoctor. AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[documentation for titles in examples] is **before** the block marker, yet AsciiDoctor https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[documentation for adminitions] shows them **AFTER** the block marker but before the block starts!
+
+This is a second paragraph in an example block to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
 
-A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as
-ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting
-and images, in a manner independent of application software, hardware, and operating systems. Based on the
-PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the
-text, fonts, vector graphics, raster images and other information needed to display it.
+A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
 
 
