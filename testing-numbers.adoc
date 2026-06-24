@@ -9,6 +9,14 @@ The document attributes:
 * `:number-presentation-profile-binary:` has a value of `{number-presentation-profile-binary}`.
 * `:number-presentation-profile-unicode:` has a value of `{number-presentation-profile-unicode}`.
 
+Test predefined attribute-based markup for 23 decimal (0x17, 027 octal, 0001 0111 b):
+
+* number:23[]
+* number:23[profile=hex-bytes]
+* number:23[profile=octal]
+* number:23[profile=binary]
+* number:23[profile=unicode]
+
 Test predefined attribute-based markup for 234 decimal (0xEA, 352 octal, 1110 1010 b):
 
 * number:234[]
