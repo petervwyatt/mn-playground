@@ -53,22 +53,11 @@ Here is a PDF operator semantic span that is also in the index span:pdf-operator
 
 Document attribute `:xrefstyle:` is {xrefstyle}. This sentence references other numbered headings, such as <<Smart_quoting>>, <<Horizontal_lines>>, and <<Testing_tables>>.
 
-A:: Definition list item for A
-B:: Definition list item for B
-C:: Definition list item for C
-
 Here is some different text using semantic spans for PDF operators, such as PDF keywords span:pdf-keyword[RG] / span:pdf-keyword[eg], span:pdf-keyword[cm], and span:pdf-keyword[Do]. 
 
 ===== Heading H5 second with _italic_
 
 Some test referencing the full term {{end-of-data marker}}. This is a citation to the second appendix - see <<annex_B>>. 
-
-* Bullet list depth 1
-** Bullet list depth 2
-*** Bullet list depth 3
-**** Bullet list depth 4 - we should never go here!
-***** Bullet list depth 5 - we should never go here!
-****** Bullet list depth 6 - we should never go here!
 
 More test referencing a preferred term {{((EOD marker))}} that is _internally_ wrapped for indexing. This is mentioned using `term` term:[EOD marker]. This is mentioned using `term` with internal wrapping for indexing term:[((EOD marker))]. CANNOT do outer index wrapping of terms or `term` as this causes MN errors "_Empty index term: ..._".
 
@@ -86,4 +75,14 @@ Testing of when "x" is auto-converted to stem:[xx] when a digit is immediately e
 * 0 x0 - space before "x"
 * 0x\0 - use of `\0` after "x"
 
+== Quote blocks
+
+The following is a quote block. It is also citing a bibliographic reference from elsewhere in this document. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
+
+[quote, ISO, "ISO32000_2_AMD1,clause=1.2.3 Some heading in a doc,table=123"]
+____
+Graphics objects, other than text objects, shall be tagged with a **Figure** tag. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
+____
+
+This is the line after the quote block. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
 
