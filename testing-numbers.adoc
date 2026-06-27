@@ -33,4 +33,6 @@ Test predefined attribute-based markup for 123,456 decimal (0x5BA0, 55640 octal,
 * number:23456[profile=binary]
 * number:23456[profile=unicode]
 
+This is the last line of text.
+
 

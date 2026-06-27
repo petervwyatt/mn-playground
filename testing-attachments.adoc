@@ -4,7 +4,7 @@
 
 Test to see if the *Desc* string of embedded file attachments gets correctly converted as Unicode characters, and MN magic things "smart quotes". The most portable Dec string would be as UTF-16BE but the required 2-byte 0xFE 0xFF BoM is required. Also test for differences between ASCII and PDF default *PDFDocEcoding*.
 
-Also test how files get embedded, and what differences `span:classification.pdf-AFRelationship[Schema]` makes. Need to use a PDF forensic tool to inspect what encoding is used for the chars in <<table_PDFDocEncoding>>!
+Also test how files get embedded, and what differences `span:classification.pdf-AFRelationship[Schema]` makes. Need to use a PDF forensic tool to inspect what encoding is used for the chars in <<table_PDFDocEncoding>>! This table is also sortable in HTML.
 
 [[table_PDFDocEncoding]]
 .Sortable table of *PDFDocEncoding* vs Unicode

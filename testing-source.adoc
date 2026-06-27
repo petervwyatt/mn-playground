@@ -4,6 +4,8 @@
 
 ifdef::source-highlighter[* `:source-highlighter:` is set to `{source-highlighter}`.]
 
+Line before a macro expansion that probably won't expand - but it may leave an empty paragraph!
+
 ifdef::source-linenums-option[* `:source-linenums-option:` is set to `{source-linenums-option}`.]
 
 Here are source code blocks with an inline image and `subs="verbatim,macros"`. 
@@ -229,5 +231,6 @@ startxref
 %%EOF
 ----
 
-Random mention of ((zebra-striping)) for indexing.
+Random mention of ((zebra-striping)) for indexing. Last line in H1.
+
 

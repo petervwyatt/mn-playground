@@ -23,13 +23,13 @@ An ordered list:
 
 <<Point4,Point 4>> highlights that despite the blah blah.
 
-A definition lists:
+A definition list:
 
 A:: Definition list item for A. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
 B:: Definition list item for B
 C:: Definition list item for C
 
-A finally nested definition list:
+And finally a nested definition list:
 
 A:: First part of outer definition list
   AA::: Definition list item for A-A. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.

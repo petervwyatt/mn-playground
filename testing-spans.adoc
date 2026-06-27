@@ -81,8 +81,8 @@ The following is a quote block. It is also citing a bibliographic reference from
 
 [quote, ISO, "ISO32000_2_AMD1,clause=1.2.3 Some heading in a doc,table=123"]
 ____
-Graphics objects, other than text objects, shall be tagged with a **Figure** tag. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
+Graphics objects, other than text objects, span:requirement[shall] be tagged with a **Figure** tag. Here is some very simple math stem:[(x+y)^2]. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. These words include *bold*, _italic_, and `monospaced`.
 ____
 
-This is the line after the quote block. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
+This is the line after the quote block. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
 
