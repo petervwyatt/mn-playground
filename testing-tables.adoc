@@ -7,7 +7,7 @@ This tests table formatting. Due to ((zebra-striping)), rows are duplicated to t
 
 [[table1]]
 .Title for table 1 **bold** __italic__ `mono`
-[role="sortable",headerrows=2,cols="a,a,a,a",alt=Alt text for table accessibility,summary=Summary text for table accessibility]
+[class="sortable",headerrows=2,cols="a,a,a,a",alt=Alt text for table accessibility,summary=Summary text for table accessibility]
 |===
 .2+|Sample 3+^| Formatting
 | _Italic_ | *Bold* | `Monospaced`
@@ -120,7 +120,7 @@ Citation to table below: <<table_layout_test>> tests a layout table for sub-figu
 
 [[table_layout_test]]
 .2x2 layout table
-[cols="a,a",frame=none,grid=none,stripes=none,role="layout"]
+[cols="a,a",frame=none,grid=none,stripes=none,class="layout"]
 |===
 
 |
@@ -157,11 +157,11 @@ Random mention of term {{((EOD))}} for indexing purposes.
 
 === Testing sortable tables (HTML only)
 
-The following <<table_sort_test>> should be sortable in HTML based on the `role` attribute. Contents of this table also includes lists, definition lists, and examples. 
+The following <<table_sort_test>> should be sortable in HTML based on the `class` (not `role`!) attribute. Contents of this table also includes lists, definition lists, and examples. 
 
 [[table_sort_test]]
 .A random table from ISO 32000-2
-[role="sortable",cols="~,~,a",options="header,autowidth"]
+[class="sortable",cols="~,~,a",options="header,autowidth"]
 |===
 h| Key | Type | Description
 

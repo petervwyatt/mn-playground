@@ -8,7 +8,7 @@ Also test how files get embedded, and what differences `span:classification.pdf-
 
 [[table_PDFDocEncoding]]
 .Sortable table of *PDFDocEncoding* vs Unicode
-[role="sortable",cols="a,a,a,a",options="header"]
+[class="sortable",cols="a,a,a,a",options="header"]
 |===
 h| **PDFDocEncoding** name | **PDFDocEncoding** value | Unicode codepoint | AsciiDoc
 | Breve | 024 dec | U+02D8 | &#x02db;
