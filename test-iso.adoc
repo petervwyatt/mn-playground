@@ -45,6 +45,10 @@
 :workgroup-number: 8
 :secretariat: ANSI
 :committee-type: technical
+:toc-figures: true
+:toc-tables: true
+:toc-requirements: true
+:toc-examples: true
 :clause-term: clause
 :clauses-term: clauses
 :sub-clause-term: subclause
