@@ -18,6 +18,8 @@ h| **PDFDocEncoding** name | **PDFDocEncoding** value | Unicode codepoint | Asci
 | __invalid!__ | - | U+44CA | &#x44CA;
 |===
 
+Note that the use of the U+44CA glyph in the table above should generate the error: "_Glyph "x" (0x44ca) not available in font "SourceSans3-Regular_"." in *.pdfa.err log file.
+
 This is a <<Attachment1,reference to Attachment 1 with an AFRelationship>> and this is a <<Attachment2,reference to Attachment 2 also with an AFRelationship>>. <<Attachment3,Attachment 3>> does NOT have an *AFRelationship*.
 
 === Mentions of bibliographic entries with spans
