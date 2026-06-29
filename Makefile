@@ -60,8 +60,8 @@ clean:
 # Use different Gemfiles for flavours to allow customization (eg. forked Gems with mods)
 .PHONY: build-bundle
 build-bundle:
-	bundle install
 	bundle exec metanorma site generate --agree-to-terms --output-dir _site_pdfa metanorma-pdfa.yml > bundle-pdfa.log 2>&1
+	python3 ./publication-info/postMN.py ./_site_pdfa/documents/test-pdfa.html ./_site_pdfa/documents/test-pdfa-MOD.html
 	bundle exec metanorma site generate --agree-to-terms --output-dir _site_iso  metanorma-iso.yml  > bundle-iso.log  2>&1
 
 
@@ -71,6 +71,7 @@ build-bundle:
 build-docker:
 	docker pull metanorma/metanorma
 	docker run --name $(DOCKER_NAME) --rm --volume .:/metanorma/ -w /metanorma metanorma/metanorma metanorma site generate metanorma-pdfa.yml --output-dir _site_dpdfa --agree-to-terms > docker-pdfa.log 2>&1
+	python3 ./publication-info/postMN.py ./_site_dpdfa/documents/test-pdfa.html ./_site_dpdfa/documents/test-pdfa-MOD.html
 	docker run --name $(DOCKER_NAME) --rm --volume .:/metanorma/ -w /metanorma metanorma/metanorma metanorma site generate metanorma-iso.yml  --output-dir _site_diso  --agree-to-terms > docker-iso.log  2>&1
 
 
