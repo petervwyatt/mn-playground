@@ -15,10 +15,10 @@ h| **PDFDocEncoding** name | **PDFDocEncoding** value | Unicode codepoint | Asci
 | Caron | 025 dec | U+02c7 | &#x02c7;
 | Dagger | 129 dec | U+2020 | &#x2020;
 | Double dagger | 130 dec | U+2021 | &#x2021;
-| __invalid!__ | - | U+44CA | &#x44CA;
+| __invalid!__ | - | U+44CA | [custom-charset: cjk]#&#x44CA;#
 |===
 
-Note that the use of the U+44CA glyph in the table above should generate the error: "_Glyph "x" (0x44ca) not available in font "SourceSans3-Regular_"." in *.pdfa.err log file.
+Note that the use of the U+44CA glyph in the table above may generate the error: "_Glyph "x" (0x44ca) not available in font "SourceSans3-Regular_"." in *.pdfa.err log file. In this case, the PDF will likely show as "#" as the appearance. The fix is to use a special character mapping as described in https://www.metanorma.org/blog/2024-08-12-fonts-special-chars/ and https://www.metanorma.org/author/topics/inline_markup/text_formatting/#custom-character-sets by setting the document attribute `:presentation-metadata-custom-charset-font:` appropriately to a font with the missing glyphs.
 
 This is a <<Attachment1,reference to Attachment 1 with an AFRelationship>> and this is a <<Attachment2,reference to Attachment 2 also with an AFRelationship>>. <<Attachment3,Attachment 3>> does NOT have an *AFRelationship*.
 
