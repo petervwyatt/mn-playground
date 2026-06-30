@@ -3,10 +3,11 @@
 This tests different kinds of figures, esp. SVG since those can cause font related issues. This is some normal text with an inline image image:Letter_T.png[Some alt text for inline] to see how line wrapping goes for sentences that are excessively long and wordy. The next block is for testing PlantUML SVG.
 
 .Testing PlantUML
-[plantuml,target="PlantUMLTest",format=svg]
+[plantuml,target="PlantUMLTest",format=svg,alt=Plantuml attribute alt text]
 ....
 @startsalt
 skinparam lengthAdjust none
+skinparam defaultFontName "Source Sans 3"
 {
   {T!
     ++ <b>H1</b> | .
@@ -18,15 +19,28 @@ skinparam lengthAdjust none
 
 The following is a figure but not in a block:
 
-image::PDFaLogo.png[alt=some alt text,title=title text]
+image::PDFaLogo.png[alt=some image alt text,titleattr=Image titleattr text]
 
 
-The following is a bitmap (PNG) figure in a figure block with an explicit width setting.
+The following is a bitmap (PNG) image in a figure block with an explicit width setting.
 
-.Some PNG figure block
-[figure%unnumbered,width=33%]
+.A PNG figure block
+[figure]
 ====
-image::PDFaLogo.png[alt=some figure block alt text,title=title figure block attribute]
+image::PDFaLogo.png[width=250px,alt=some figure block alt text,titleattr=title figure titleattr block attribute]
+
+This is text in a figure block.
+
+NOTE: This is a note in a figure block.
 ====
+
+This is a listing of all the fonts PlantUML knows about:
+
+[plantuml,target="list-fonts",format=svg]
+....
+@startuml
+listfont The quick brown fox jumps over the lazy dog.
+@enduml
+....
 
 
