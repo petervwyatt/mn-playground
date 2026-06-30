@@ -1,0 +1,32 @@
+== Figures
+
+This tests different kinds of figures, esp. SVG since those can cause font related issues. This is some normal text with an inline image image:Letter_T.png[Some alt text for inline] to see how line wrapping goes for sentences that are excessively long and wordy. The next block is for testing PlantUML SVG.
+
+.Testing PlantUML
+[plantuml,target="PlantUMLTest",format=svg]
+....
+@startsalt
+skinparam lengthAdjust none
+{
+  {T!
+    ++ <b>H1</b> | .
+    +++ <b>Figure</b> <b>ActualText</b>="Cats and Dogs" <b>Placement</b>=<i>Inline</i> | An image representing the words 'Cats and Dogs' 
+  }
+}
+@endsalt
+....
+
+The following is a figure but not in a block:
+
+image::PDFaLogo.png[alt=some alt text,title=title text]
+
+
+The following is a bitmap (PNG) figure in a figure block with an explicit width setting.
+
+.Some PNG figure block
+[figure%unnumbered,width=33%]
+====
+image::PDFaLogo.png[alt=some figure block alt text,title=title figure block attribute]
+====
+
+
