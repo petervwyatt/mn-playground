@@ -29,11 +29,13 @@ The following is a bitmap (PNG) image in a figure block with an explicit width s
 ====
 image::PDFaLogo.png[width=250px,alt=some figure block alt text,titleattr=title figure titleattr block attribute]
 
+
 This is text in a figure block.
 
 NOTE: This is a note in a figure block.
 ====
 
+ifeval::[1 > 2]
 This is a listing of all the fonts PlantUML knows about:
 
 [plantuml,target="list-fonts",format=svg]
@@ -42,5 +44,6 @@ This is a listing of all the fonts PlantUML knows about:
 listfont The quick brown fox jumps over the lazy dog.
 @enduml
 ....
+endif::[]
 
 
