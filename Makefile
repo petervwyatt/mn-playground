@@ -48,6 +48,7 @@ endif
 clean:
 	-@$(RMDIR) iev relaton
 	-@$(RMDIR) _site_diso _site_dpdfa _site_iso _site_pdfa _site
+	-@$(RMDIR) _plantuml_images
 	-@$(RM_RECURSIVE) *.log
 	-@$(RM_RECURSIVE) *.abort 
 	-@$(RM_RECURSIVE) *.log.txt
