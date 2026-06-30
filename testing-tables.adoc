@@ -125,30 +125,30 @@ Citation to table below: <<table_layout_test>> tests a layout table for sub-figu
 
 |
 .Row 1, Column A
-[figure,width=text-width]
+[figure]
 ====
 image::test-cover.png[alt=some A1 alt text,title=title A1] 
 ====
 
 |
 .Row 1, Coumn B
-[figure,width=text-width]
+[figure]
 ====
-image::PDFaLogo.png[alt=some A2 alt text for T,title=title B1]
+image::PDFaLogo.png[width=text-width,alt=some A2 alt text for T,title=title B1]
 ====
 
 |
 .Row 2, Column A
-[figure%unnumbered,width=text-width]
+[figure%unnumbered]
 ====
 image::Letter_T.png[alt=some B1 alt text for T,title=title A2]
 ====
 
 |
 .Row 2, Column B
-[figure%unnumbered,width=text-width]
+[figure%unnumbered]
 ====
-image::test-cover.png[alt=some B2 alt text,title=title B2]
+image::test-cover.png[width=text-width,alt=some B2 alt text,title=title B2]
 ====
 
 |===
