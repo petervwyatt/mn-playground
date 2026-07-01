@@ -6,12 +6,12 @@ This tests different kinds of figures, esp. SVG since those can cause font relat
 [plantuml,target="PlantUMLTest",format=svg,alt=Plantuml attribute alt text]
 ....
 @startsalt
+scale 2
 skinparam lengthAdjust none
-skinparam defaultFontName "Source Sans 3"
 {
   {T!
-    ++ <b>H1</b> | .
-    +++ <b>Figure</b> <b>ActualText</b>="Cats and Dogs" <b>Placement</b>=<i>Inline</i> | An image representing the words 'Cats and Dogs' 
+    ++ <b>H1</b> | <font:monospaced>Mono</font>
+    +++ <b>Figure</b> //Cats// and **Dogs** | Some ""monospaced"" text 
   }
 }
 @endsalt
