@@ -14,4 +14,6 @@ Currently does NOT use the [custom Ruby code](https://github.com/pdf-association
 
 ## Messing around with pdfa.xsl
 
-The XSL, etc. used for controlling PDFa outout is located for me at `C:\Ruby40-x64\lib\ruby\gems\4.0.0\gems\metanorma-taste-1.0.4\data\pdfa\`. Files can be changed in my forked repo <https://github.com/petervwyatt/metanorma-taste> in `./data/pdfa/` then copied to this location for testing. Alternatively modify Gemfile by adding the line `gem 'metanorma-taste', git: 'https://github.com/petervwyatt/metanorma-taste'` - but remember to remove this later!
+The XSL, YAML, etc. used for controlling PDFa outout is located for me at `C:\Ruby40-x64\lib\ruby\gems\4.0.0\gems\metanorma-taste-1.0.9\data\pdfa\`. Files can be changed in my forked repo <https://github.com/petervwyatt/metanorma-taste> in `./data/pdfa/` then copied to this location for testing. Alternatively modify Gemfile by adding the line `gem 'metanorma-taste', git: 'https://github.com/petervwyatt/metanorma-taste'` - but remember to remove this later!
+
+After `bundle install`, run `bundle info metanorma-taste` and locate the installation path for the runtime Gem that will get used. Then copy all the modified PDF Association styling files into this path + `/data/pdfa/`.
