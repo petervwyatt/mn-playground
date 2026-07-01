@@ -1,5 +1,7 @@
 == Testing lists
 
+=== Unordered lists
+
 An unordered list:
 
 * Bullet list depth 1. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
@@ -8,6 +10,8 @@ An unordered list:
 **** Bullet list depth 4. we should never go here! This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
 ***** Bullet list depth 5 - we should never go here!
 ****** Bullet list depth 6 - we should never go here!
+
+=== Ordered lists
 
 An ordered list:
 
@@ -22,6 +26,8 @@ An ordered list:
 <<Point3,Point 3>> ensures that the *Figure* structure element possesses the property (an *ActualText* entry) necessary to convey the textual content represented by the graphics objects.
 
 <<Point4,Point 4>> highlights that despite the blah blah.
+
+=== Definition lists
 
 A definition list:
 
@@ -39,6 +45,43 @@ C:: Second part of outer definition list without a child definition list. This i
 C:: Third part of outer definition list
   CA::: Definition list item for C-A
   CB::: Definition list item for C-B
-  CC::: Definition list item for C-C
+
+=== Lists followed by notes
+
+Another unordered list followed immediately by a separate note
+
+* Item 1
+* Item 2
+* Item 3
+
+
+
+NOTE: This is a separate inline note that is NOT associated with Item 3. In the XML includes this outside the `<li>/</li>` but inside the `</ul>` tag!
+
+Another unordered list followed immediately by a separate note
+
+* Item 3
+* Item 4
+* Item 5
+
+[]
+
+//-
+
+[NOTE]
+====
+This is a separate note block that is NOT associated with Item 5. In the XML includes this outside the `<li>/</li>` but inside the `</ul>` tag!
+====
+
+
+Another unordered list followed immediately by note that is associated with the last list item
+
+* Item 7
+* Item 8
+* Item 9 with a note +
+[NOTE]
+This is a separate note that is associated with Item 9 by using a `+`
+
+The last paragraph of text in the list section.
 
 
