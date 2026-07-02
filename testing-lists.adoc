@@ -11,6 +11,8 @@ An unordered list:
 ***** Bullet list depth 5 - we should never go here!
 ****** Bullet list depth 6 - we should never go here!
 
+Last paragraph so can check spacing from bottom of a list to a following paragraph.
+
 === Ordered lists
 
 An ordered list:
@@ -23,9 +25,7 @@ An ordered list:
 
 . [[Point4]]a *Placement* attribute with a value of _Inline_ is present on the *Figure* structure element.
 
-<<Point3,Point 3>> ensures that the *Figure* structure element possesses the property (an *ActualText* entry) necessary to convey the textual content represented by the graphics objects.
-
-<<Point4,Point 4>> highlights that despite the blah blah.
+<<Point3,Point 3>> ensures that the *Figure* structure element possesses the property (an *ActualText* entry) necessary to convey the textual content represented by the graphics objects. <<Point4,Point 4>> highlights that despite the blah blah.
 
 === Definition lists
 
@@ -46,42 +46,67 @@ C:: Third part of outer definition list
   CA::: Definition list item for C-A
   CB::: Definition list item for C-B
 
+Last paragraph so can check spacing from bottom of a list to a following paragraph.
+
 === Lists followed by notes
 
-Another unordered list followed immediately by a separate note
+An unordered list followed immediately by a separate note - this is *INCORRECT* markup:
 
 * Item 1
 * Item 2
-* Item 3
 
 
+NOTE: This is a separate inline note that is NOT associated with any list item. The XML includes this outside the `<li>/</li>` but inside the `</ul>` tag.
 
-NOTE: This is a separate inline note that is NOT associated with Item 3. In the XML includes this outside the `<li>/</li>` but inside the `</ul>` tag!
-
-Another unordered list followed immediately by a separate note
+Another unordered list followed immediately by a separate note with `keep-separate=true` - this is the correct markup and should visually appear as such:
 
 * Item 3
 * Item 4
+
+
+[NOTE,keep-separate=true]
+This is a separate note block that is NOT associated with Item 4. It has `keep-separate=true` so should be outdented from the list item.
+
+
+Another unordered list with a note that is explicitly associated with the last list item - it should appear visually indented reflecting this semantic association:
+
 * Item 5
-
-[]
-
-//-
-
+* Item 6 with a note +
 [NOTE]
-====
-This is a separate note block that is NOT associated with Item 5. In the XML includes this outside the `<li>/</li>` but inside the `</ul>` tag!
-====
+This is a small block note that is semantically associated with the last top-level list Item 6 by using a `+` and should be indented appropriately.
 
 
-Another unordered list followed immediately by note that is associated with the last list item
+A multi-level unordered list with a note that is explicitly associated with the last list item - it should appear visually indented reflecting this semantic association:
 
 * Item 7
-* Item 8
-* Item 9 with a note +
+** Item 8.A with a note +
 [NOTE]
-This is a separate note that is associated with Item 9 by using a `+`
+This is a small block note that is semantically associated with Item 8.A (depth 2) by using a `+` and should be indented appropriately.
 
-The last paragraph of text in the list section.
+
+A multi-level ordered list with a note that is explicitly associated with the last list item - it should appear visually indented reflecting this semantic association:
+
+. Item 9
+.. Item 10.A with a note +
+NOTE: This is a small inline note that is semantically associated with Item 10.A (depth 2) by using a `+` and should be indented appropriately.
+
+A multi-level mixed ordered and unordered lists with a note that is explicitly associated with the last list item - it should appear visually indented reflecting this semantic association:
+
+* Item 10
+* Item 11
+.. Ordered item 11.A with a note +
+[NOTE]
+This is a small block note that is semantically associated with Item 11.A (depth 2) by using a `+` and should be indented appropriately.
+
+
+A ordered top level list with an unordered sublist with a note that is explicitly associated with the last list item - it should appear visually indented reflecting this semantic association:
+
+. Item 11
+. Item 12
+** Unordered item 12.A with a note +
+NOTE: This is a small inline note that is semantically associated with Item 12.A (depth 2) by using a `+` and should be indented appropriately.
+
+
+The last paragraph of standard text in the list section.
 
 

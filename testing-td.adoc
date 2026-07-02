@@ -11,6 +11,23 @@ alt:[EOD]
 
 one or more bytes that indicate the end of data has been reached 
 
+[.source]
+<<IEC_61966_2_1,clause=1.2.3 Some IEC 61966 clause,table=4.5 Table title>>
+
+[NOTE]
+====
+A block note related to a T&D.
+
+Second paragraph of the "Note X to entry" related to the T&D. Some random text to make a proper lengthy paragraph with line wrapping. Some random text to make a proper lengthy paragraph with line wrapping.
+====
+
+[example%collapsible]
+====
+Example related to a T&D. Some random text to make a proper lengthy paragraph with line wrapping. Some random text to make a proper lengthy paragraph with line wrapping.
+
+Second paragraph of the example related to the T&D. Some random text to make a proper lengthy paragraph with line wrapping. Some random text to make a proper lengthy paragraph with line wrapping.
+====
+
 
 [glossary]
 === Abbreviated terms

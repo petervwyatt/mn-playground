@@ -168,8 +168,10 @@ h| Key | Type | Description
 | *Start* | (various) | (_Optional_) The starting time span:requirement[shall] be nominally a non-negative 64-bit integer, specified as follows:
 
 * If it is representable as a 32 bit integer, it span:requirement[shall] be specified as such.
-* If it is not representable as a 32 bit integer, it span:requirement[shall] be specified as an 8-byte string representing a 64-bit twos-complement integer, most significant byte first.
-* If it is expressed in a time scale different from that of the movie itself, it span:requirement[shall] be represented as an array of two values: an integer or byte string denoting the starting time, followed by an integer specifying the time scale in units per second.
+** If it is not representable as a 32 bit integer, it span:requirement[shall] be specified as an 8-byte string representing a 64-bit twos-complement integer, most significant byte first.
+* If it is expressed in a time scale different from that of the movie itself, it span:requirement[shall] be represented as an array of two values: an integer or byte string denoting the starting time, followed by an integer specifying the time scale in units per second. +
+[NOTE]
+This is a random note associated with last bullet above.
 
 If this entry is omitted, the movie span:requirement[shall] be played from the beginning.
 
@@ -179,13 +181,11 @@ If this entry is omitted, the movie span:requirement[shall] be played from the b
 
 Default value: 1.0.
 
-| *Volume* | number | (_Optional_) The initial sound volume at which to play the movie, in the range -1.0 to 1.0. Higher values span:requirement[shall] denote greater volume; negative values span:requirement[shall] mute the sound. 
-
-Default value: 1.0.
-
 | *ShowControls* | boolean | (_Optional_) A flag specifying whether to display a movie controller bar while playing the movie. 
 
 Default value: span:pdf-keyword[false].
+
+NOTE: Some random note.
 
 | *Mode* | name | (_Optional_) The play mode for playing the movie:
 
@@ -204,6 +204,8 @@ Default value: _Once_.
 Default value: span:pdf-keyword[false].
 
 | *FWScale* | array | (_Optional_) The magnification (zoom) factor at which the movie span:requirement[shall] be played. The presence of this entry implies that the movie span:requirement[shall] be played in a floating window. If the entry is absent, the movie span:requirement[shall] be played in the annotation rectangle.
+
+NOTE: Another random note in a table.
 
 The value of the entry span:requirement[shall] be an array of two positive integers, _[numerator denominator]_, denoting a rational magnification factor for the movie. The final window size, in pixels, span:requirement[shall] be stem:[(ii"numerator" div ii"denominator") xx "Aspect"] where the value of *Aspect* span:requirement[shall] be taken from the movie dictionary.
 
