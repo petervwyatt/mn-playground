@@ -33,7 +33,9 @@ Here is the first mention of the <<SomeSpec, custom bibliographic entry>>. And h
  * [[[ISO32000_2_AMD1,ISO 32000-2:2020/DAmd 1]]]
 
 
-* [[[IEC_61966_2_1,IEC 61966-2-1]]]
+* [[[IEC_61966_2_1,amend(IEC 61966-2-1)]]]
+span:note.display[Some note related to IEC 61966-2-1 with a bare URL https://pdfa.org/ and URL with replacement https://pdfa.org/[PDFa website].]
+
 
 * [[[IEC_61966_2_1_AMD1,IEC 61966-2-1:1999/AMD1:2003]]]
 
@@ -51,7 +53,7 @@ span:type[standard]
 span:uri[https://pdfa.org/]
 span:note[This is the first note span associated with a custom bibliographic reference. It is nice and long so that word wrapping and indentation can be more easily viewed in the various output formats.]
 span:note[This is a second note span associated with a custom bibliographic reference. It is also nice and long so that word wrapping and indentation can still be easily viewed in the various output formats. Blah blah blah.]
-span:note.display[This is the third note span associated with a custom bibliographic reference, but using "display". It is nice and long so that word wrapping and indentation can be more easily viewed in the various output formats.]
+span:note.display[This is the third note span associated with a custom bibliographic reference, but using "display". It is nice and long so that word wrapping and indentation can be more easily viewed in the various output formats. Includes a bare URL https://pdfa.org/.]
 span:note.display,warning[This is a fourth note span associated with a custom bibliographic reference, but using "display,warning". It is also nice and long so that word wrapping and indentation can still be easily viewed in the various output formats. Blah blah blah.]
 
 // This is a naked Relaton ISO reference - MN should expand appropriately for the flavour
