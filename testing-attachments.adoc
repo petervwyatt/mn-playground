@@ -29,6 +29,8 @@ Here is the first mention of the <<SomeSpec, custom bibliographic entry>>. And h
 [bibliography]
 == Bibliography
 
+The PDF Association provides https://pdfa.org/sponsored-standards/[sponsored editions of many ISO standards] for no-cost. 
+
 // Testing for https://github.com/relaton/relaton-iso/issues/181
  * [[[ISO32000_2_AMD1,ISO 32000-2:2020/DAmd 1]]]
 
