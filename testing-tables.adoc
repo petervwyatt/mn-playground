@@ -3,11 +3,11 @@
 
 === Table styling
 
-This tests table formatting. Due to ((zebra-striping)), rows are duplicated to test appearance for alternating rows. There are 2 header rows. See https://www.metanorma.org/author/topics/blocks/tables. This sentence also has a footnote footnote:[This is the footnote text from the first paragraph (not in the table).]
+This tests table formatting and classes (`class="sortable cell-border stripe"`). Due to ((zebra-striping)), rows are duplicated to test appearance for alternating rows. There are 2 header rows. See https://www.metanorma.org/author/topics/blocks/tables. This sentence also has a footnote footnote:[This is the footnote text from the first paragraph (not in the table).]
 
 [[table1]]
 .Title for table 1 **bold** __italic__ `mono`
-[class="sortable",headerrows=2,cols="a,a,a,a",alt=Alt text for table accessibility,summary=Summary text for table accessibility]
+[class="sortable cell-border stripe",headerrows=2,cols="a,a,a,a",alt=Alt text for table accessibility,summary=Summary text for table accessibility]
 |===
 .2+|Sample 3+^| Formatting
 | _Italic_ | *Bold* | `Monospaced`
@@ -45,9 +45,9 @@ WARNING: This is a warning inside a table cell. It also has a long sentence so i
 </div>
 ----
 
-| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures[title=Alt text for pqc URL via title attribute] in a cell.
+| *Normal* | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures[title=Alt text for pqc URL via title attribute] in a cell.
 
-| Normal | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell without any markup.
+| *Normal* | text | string | A URL https://pdfa.org/resource/extension-pqc-signatures in a cell without any markup.
 
 | *Bla Blah* | text | name a| Some generic opening text in a sentence in a table cell. This cell needs to be repeated to test with zebra-striping.
 
@@ -116,11 +116,11 @@ This is a paragraph of normal text after the table. This is a paragraph of norma
 
 === Testing a layout table
 
-Citation to table below: <<table_layout_test>> tests a layout table for sub-figure block images with titles.
+Citation to table below: <<table_layout_test>> tests a `class=layout`` table for sub-figure block images with titles. No DataTables.js classes are specified.
 
 [[table_layout_test]]
 .2x2 layout table
-[cols="a,a",frame=none,grid=none,stripes=none,class="layout"]
+[class="layout",cols="a,a"]
 |===
 
 |
@@ -157,11 +157,11 @@ Random mention of term {{((EOD))}} for indexing purposes.
 
 === Testing sortable tables (HTML only)
 
-The following <<table_sort_test>> should be sortable in HTML based on the `class` (not `role`!) attribute. Contents of this table also includes lists, definition lists, and examples. 
+The following <<table_sort_test>> should be sortable in HTML based on the `class` (not `role`!) attribute. Contents of this table also includes lists, definition lists, and examples. Classes are `class="sortable compact stripe cell-border hover"`.
 
 [[table_sort_test]]
 .A random table from ISO 32000-2
-[class="sortable",cols="~,~,a",options="header,autowidth"]
+[class="sortable compact stripe cell-border hover",cols="~,~,a",options="header,autowidth"]
 |===
 h| Key | Type | Description
 
@@ -190,11 +190,8 @@ NOTE: Some random note.
 | *Mode* | name | (_Optional_) The play mode for playing the movie:
 
 _Once_:: Play once and stop.
-
 _Open_:: Play and leave the movie controller bar open.
-
 _Repeat_:: Play repeatedly from beginning to end until stopped.
-
 _Palindrome_:: Play continuously forward and backward until stopped.
 
 Default value: _Once_.
@@ -213,7 +210,7 @@ The value of the entry span:requirement[shall] be an array of two positive integ
 
 [example%collapsible]
 ====
-The value [ 0.5 0.5 ] centres the window on the screen.
+The value `[ 0.5 0.5 ]` centres the window on the screen.
 ====
 
 Default value: [ 0.5 0.5 ].
