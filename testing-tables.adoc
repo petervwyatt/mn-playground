@@ -12,7 +12,7 @@ This tests table formatting and classes (`class="sortable cell-border stripe"`).
 .2+|Sample 3+^| Formatting
 | _Italic_ | *Bold* | `Monospaced`
 
-| *Bold* | text | name a| Some text in a sentence with a footnote with blank {blank}footnote:[This is the first table footnote text preceded by blank.].
+| *Bold* | text | name a| Some text in a very long sentence so that the following footnote starts on line two to prove horizontal text alignment with a footnote with preceding blank {blank}footnote:[This is the first table footnote text preceded by blank.].
 
 NOTE: This is a note inside a table cell. It has a long sentence so it hopefully spans several lines.
 
