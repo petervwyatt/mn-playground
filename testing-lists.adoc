@@ -43,10 +43,10 @@ A:: First part of outer definition list
   AC::: Definition list item for A-C
 B:: Second part of outer definition list without a child definition list. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. his is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
 C:: Third part of outer definition list
-  CA::: Definition list item for C-A. Why is this indent different to above?
+  CA::: Definition list item for C-A.
   CB::: Definition list item for C-B
 
-Last paragraph so can check spacing from bottom of a list to a following paragraph.
+If the CA definition text is longer (e.g. has "Why is this indent different to above?"), then the gap between the *CA* and the text gets reduced! Last paragraph so can check spacing from bottom of a list to a following paragraph.
 
 === Lists followed by notes
 
