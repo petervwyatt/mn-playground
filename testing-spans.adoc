@@ -77,9 +77,9 @@ Testing of when "x" is auto-converted to stem:[xx] when a digit is immediately e
 
 == Quote blocks
 
-The following is a quote block. It is also citing a bibliographic reference from elsewhere in this document. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
+The following is a quote block. It is also citing a bibliographic reference from elsewhere in this document. Note that quotes cannot be used in the 3rd argument. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
 
-[quote, ISO, "ISO32000_2_AMD1,clause=1.2.3 Some heading in a doc,table=123 -- Some table caption"]
+[quote, ISO, "ISO32000_2_AMD1,clause=1.2.3 Some heading in a doc,table=123 - Some table caption"]
 ____
 Graphics objects, other than text objects, span:requirement[shall] be tagged with a **Figure** tag. Here is some very simple math stem:[(x+y)^2]. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output. These words include *bold*, _italic_, and `monospaced`.
 ____
