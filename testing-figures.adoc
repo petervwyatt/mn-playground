@@ -17,12 +17,12 @@ skinparam lengthAdjust none
 @endsalt
 ....
 
-The following is a figure but not in a block:
+The following is a figure but not in a block and without a caption:
 
 image::PDFaLogo.png[alt=some image alt text,titleattr=Image titleattr text]
 
 
-The following is a bitmap (PNG) image in a figure block with an explicit width setting.
+The following is a bitmap (PNG) image in a figure block with an explicit width setting and a caption.
 
 .A PNG figure block
 [figure]
@@ -37,6 +37,8 @@ NOTE: This is a note in a figure block.
 
 ifeval::[1 > 2]
 This is a listing of all the fonts PlantUML knows about:
+
+// This makes a mess for PDF font management so only do for debugging!
 
 [plantuml,target="list-fonts",format=svg]
 ....
