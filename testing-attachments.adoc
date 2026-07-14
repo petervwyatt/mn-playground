@@ -29,7 +29,14 @@ Here is the first mention of the <<SomeSpec, custom bibliographic entry>>. And h
 [bibliography]
 == Bibliography
 
+[.boilerplate]
+--
+// Cannot have normal paragraph text in informative Biblio section! Everything needs to be list items or a stray `<P>` tag in a list `<L>` will result!
+// If explicit `normative=true`, then this section and all references are moved to clause 1 (up front, immediately after all prefatory clauses and before T&Ds) and each entry and all notes are tagged as `<P>`.
+// If explicit `normative=false` or no explicit normative attribute, then this boilerplate text fails to appear.
+// SOLTION for informative bibliographies: move this text to a prefatory section instead.
 The PDF Association provides https://pdfa.org/sponsored-standards/[sponsored editions of many ISO standards] for no-cost. 
+--
 
 // Testing for https://github.com/relaton/relaton-iso/issues/181
  * [[[ISO32000_2_AMD1,ISO 32000-2:2020/DAmd 1]]]
