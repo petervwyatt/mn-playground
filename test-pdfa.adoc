@@ -5,9 +5,9 @@
 :data-uri-image: true
 :docnumber: 89
 :version: 1.2.3
-:edition: 4.5
+:edition: 4
 :created-date: 2025-04
-:revdate: 2026-06
+:published-date: 2026-06-02
 :copyright-year: 2025
 :language: en
 :mn-document-class: pdfa
