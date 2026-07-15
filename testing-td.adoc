@@ -3,7 +3,7 @@
 [source=ISO32Kb]
 === Terms and definitions
 
-// Testing rendered appearance of T&Ds, preferred and alternate terms
+// Testing rendered appearance of T&Ds, preferred and alternate terms. Also check tags!
 
 ==== end-of-data marker
 preferred:[EOD marker]
@@ -27,6 +27,15 @@ Example related to a T&D. Some random text to make a proper lengthy paragraph wi
 
 Second paragraph of the example related to the T&D. Some random text to make a proper lengthy paragraph with line wrapping. Some random text to make a proper lengthy paragraph with line wrapping.
 ====
+
+==== second term
+
+definition for a second term without any preferred or alternate term - check the tags
+
+==== third term
+preferred:[3rd term]
+
+definition for a third term with preferred term - check the tags
 
 
 [glossary]
