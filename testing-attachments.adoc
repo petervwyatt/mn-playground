@@ -79,7 +79,7 @@ span:note.display,editorial[This is a fourth note span associated with a Relaton
 
 * [[[Attachment1,attachment:(metanorma-pdfa.yml)]]], span:classification.pdf-AFRelationship[Data], Double-quoted "text" with **bold** and apostrophe's.
 
-* [[[Attachment2,attachment:(metanorma-iso.yml)]]], span:classification.pdf-AFRelationship[Schema], Unicode that don't match PDFDocEncoding. Dagger &#x2020; and Double-dagger &#x2021;.
+* [[[Attachment2,attachment:(metanorma-iso.yml)]]], span:classification.pdf-AFRelationship[Supplement], Unicode that don't match PDFDocEncoding. Dagger &#x2020; and Double-dagger &#x2021;.
 
 * [[[Attachment3,attachment:(cspell.json)]]], Attachment without any AFRelationship. A CJK: &#x44CA;.
 
