@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "metanorma-cli"
+gem "metanorma-ribose", git: "https://github.com/metanorma/metanorma-ribose.git", branch: "main"
 gem "asciidoctor-pdf"
 
 # Included with Ruby 3.x, but explicitly needed by Ruby 4.x
