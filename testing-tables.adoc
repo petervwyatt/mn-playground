@@ -216,16 +216,40 @@ The value `[ 0.5 0.5 ]` centres the window on the screen.
 Default value: [ 0.5 0.5 ].
 |===
 
-=== Testing tables with row span
+=== Testing tables with row spans
 
-This is a partial copy from <<ISO32Kb,table=377>> to test the tagging of row spans and row headers.
+A simple table with row headers only:
+
+.Row headers only, no rowspan
+[cols="h,1,1,1",options="autowidth"]
+|===
+|   | A  | B  | C 
+| 1 | a1 | b1 | c1
+| 2 | a2 | b2 | c2
+| 3 | a3 | b3 | c3
+|===
+
+
+A simple table with row and column headers:
+
+.Both row and columns header, no rowspan
+[cols="h,1,1,1",options="header,autowidth"]
+|===
+h|   | A  | B  | C 
+| 1 | a1 | b1 | c1
+| 2 | a2 | b2 | c2
+| 3 | a3 | b3 | c3
+|===
+
+
+This is a partial copy from <<ISO32Kb,table=377>> to test the tagging of complex row spans, row headers, and column headers. Because of row-span, the `cols="..."` attribute cannot have an `h`.
 
 .Standard layout attributes
-[cols=3,options="header,autowidth"]
+[cols="1,1,1"",options="header,autowidth"]
 |===
 h| Structure Elements | Attributes | Inheritable
 
-.8+| *Any structure element*
+.8+h| *Any structure element*
 | Placement | No
 | WritingMode | Yes
 | BackgroundColor | No
@@ -235,17 +259,17 @@ h| Structure Elements | Attributes | Inheritable
 | Color | Yes
 | Padding | No
 
-.4+a| *Any BLSE; ILSEs with Placement other than Inline*
+.4+h| *Any BLSE; ILSEs with Placement other than Inline*
 | SpaceBefore | No
 | SpaceAfter | No
 | StartIndent | Yes
 | EndIndent | Yes
 
-.2+| *BLSEs containing text*
+.2+h| *BLSEs containing text*
 | TextIndent | Yes
 | TextAlign | Yes
 
-.3+| *Figure, Form, Formula and Table elements*
+.3+h| *Figure, Form, Formula and Table elements*
 | BBox | No
 | Width | No
 | Height | No
