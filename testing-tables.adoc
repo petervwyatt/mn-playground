@@ -189,10 +189,10 @@ NOTE: Some random note.
 
 | *Mode* | name | (_Optional_) The play mode for playing the movie:
 
-_Once_:: Play once and stop.
-_Open_:: Play and leave the movie controller bar open.
-_Repeat_:: Play repeatedly from beginning to end until stopped.
-_Palindrome_:: Play continuously forward and backward until stopped.
+__Formatted italic__:: Play once and stop.
+`Formatted mono`:: Play and leave the movie controller bar open.
+Not italic A:: Play repeatedly from beginning to end until stopped.
+Not italic B:: Play continuously forward and backward until stopped.
 
 Default value: _Once_.
 
@@ -214,6 +214,42 @@ The value `[ 0.5 0.5 ]` centres the window on the screen.
 ====
 
 Default value: [ 0.5 0.5 ].
+|===
+
+=== Testing tables with row span
+
+This is a partial copy from <<ISO32Kb,table=377>> to test the tagging of row spans and row headers.
+
+.Standard layout attributes
+[cols=3,options="header,autowidth"]
+|===
+h| Structure Elements | Attributes | Inheritable
+
+.8+| *Any structure element*
+| Placement | No
+| WritingMode | Yes
+| BackgroundColor | No
+| BorderColor | Yes
+| BorderStyle | No
+| BorderThickness | Yes
+| Color | Yes
+| Padding | No
+
+.4+a| *Any BLSE; ILSEs with Placement other than Inline*
+| SpaceBefore | No
+| SpaceAfter | No
+| StartIndent | Yes
+| EndIndent | Yes
+
+.2+| *BLSEs containing text*
+| TextIndent | Yes
+| TextAlign | Yes
+
+.3+| *Figure, Form, Formula and Table elements*
+| BBox | No
+| Width | No
+| Height | No
+
 |===
 
 
