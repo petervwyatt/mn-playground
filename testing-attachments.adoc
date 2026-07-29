@@ -20,7 +20,9 @@ h| **PDFDocEncoding** name | **PDFDocEncoding** value | Unicode codepoint | Asci
 
 Note that the use of the U+44CA glyph in the table above may generate the error: "_Glyph "x" (0x44ca) not available in font "SourceSans3-Regular_"." in *.pdfa.err log file. In this case, the PDF will likely show as "#" as the appearance. The fix is to use a special character mapping as described in https://www.metanorma.org/blog/2024-08-12-fonts-special-chars/ and https://www.metanorma.org/author/topics/inline_markup/text_formatting/#custom-character-sets by setting the document attribute `:presentation-metadata-custom-charset-font:` appropriately to a font with the missing glyphs.
 
-This is a <<Attachment1,reference to Attachment 1 with an AFRelationship with text>> and this is a just to the attachment without any additional text <<Attachment2>>. <<Attachment3>> does NOT have an *AFRelationship* for checking in PDF viewers.
+=== References to embedded files (attachments)
+
+This is a <<Attachment1,reference to Attachment 1 with an AFRelationship with anchor text in the reference>>. This is a reference to just the attachment without any additional text for attachment 2 <<Attachment2>> so the filename is used. <<Attachment3>> uses default text from the biblio and does NOT have any *AFRelationship*. This is attachment 1 <<Attachment1,{zwsp}>> with `{zwsp}` as anchor text (so just the paperclip icon).
 
 === Mentions of bibliographic entries with spans
 
@@ -81,6 +83,6 @@ span:note.display,editorial[This is a fourth note span associated with a Relaton
 
 * [[[Attachment2,attachment:(metanorma-iso.yml)]]], span:classification.pdf-AFRelationship[Supplement], Unicode that don't match PDFDocEncoding. Dagger &#x2020; and Double-dagger &#x2021;.
 
-* [[[Attachment3,(Attachment 3 reference text)attachment:(cspell.json)]]], Attachment without any AFRelationship. A CJK: &#x44CA;.
+* [[[Attachment3,(Custom biblio text)attachment:(cspell.json)]]], Attachment without any AFRelationship. A CJK: &#x44CA;.
 
 
