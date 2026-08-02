@@ -51,7 +51,7 @@ WARNING: This is a warning inside a table cell. It also has a long sentence so i
 
 | *Bla Blah* | text | name a| Some generic opening text in a sentence in a table cell. This cell needs to be repeated to test with zebra-striping.
 
-CAUTION: This is a caution inside a table cell. It has a long sentence so it hopefully wrap and span more than one line.
+CAUTION: This is an inline caution inside a table cell. It has a long sentence so it hopefully wrap and span more than one line.
 
 .An example in a table cell
 [example%collapsible]
@@ -75,7 +75,7 @@ And the final sentence of the example in a table cell.
 
 | *Blah Bla* | text | name a| Some generic opening text in a sentence in a table cell. This cell needs to be repeated to test with zebra-striping.
 
-CAUTION: This is a caution inside a table cell. It has a long sentence so it hopefully wrap and span more than one line.
+CAUTION: This is an inline caution inside a table cell. It has a long sentence so it hopefully wrap and span more than one line.
 
 .An example in a table cell
 [example%collapsible]
