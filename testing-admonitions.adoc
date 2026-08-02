@@ -9,7 +9,7 @@ NOTE: This is a single-line note admonition which is supported in both MN and As
 
 TIP: This is a single-line tip admonition which is supported in both MN and AsciiDoctor.
 
-.Important - Can inline admonitions have captions?
+.Can inline admonitions have captions?
 IMPORTANT: This is a single-line important admonition which is supported in both MN and AsciiDoctor.
 
 CAUTION: This is a single-line caution admonition which is supported in both MN and AsciiDoctor.
@@ -18,7 +18,7 @@ WARNING: This is a single-line warning admonition which is supported in both MN 
 
 === Editor notes need a heading to render
 
-EDITOR: This is a single-line editor admonition which is only supported by MN.
+EDITOR: This is a single-line editor admonition which is only supported by MN in drafts and RCs.
 
 A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as
 ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting
@@ -44,7 +44,7 @@ This is a single-line note admonition which is supported in both MN and AsciiDoc
 This is a single-line important admonition which is supported in both MN and AsciiDoctor. The `type=` property overrides the "TIP" so markup only has a single "box" type.
 ====
 
-.Caption of XXXX block
+.Caption of fake "XXXX" block
 [IMPORTANT,type=XXXX]
 ====
 This is a single-line admonition of type "XXXX" which is unsupported. This custom `type=` property ends up in the XML so can be custom formatted.
@@ -99,16 +99,16 @@ This is a second paragraph in a to-do block admonition to check inter-paragraph 
 A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
 
 .Caption of `type=danger` block
-[type=Danger]
+[type=danger]
 ====
-This is an unspecified note block danger admonition with explicit `type=Danger` property and a caption which is only supported by MN.
+This is an unspecified note block danger admonition with explicit `type=danger` property and a caption which is only supported by MN.
 
 This is a second paragraph in a danger block admonition to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
 
 // As per MN documentation: https://www.metanorma.org/author/topics/blocks/admonitions/#specifying-danger-and-safety
-.Caption of safety precaution block
-[CAUTION,type=Safety-Precaution]
+.Caption of `type=safety precautions` block
+[CAUTION,type=Safety Precautions]
 ====
 This is a caution block admonition with type attribute of "Safety Precautions" with a caption - only supported by MN.
 
