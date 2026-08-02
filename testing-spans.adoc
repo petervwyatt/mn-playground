@@ -32,7 +32,7 @@ See https://docs.asciidoctor.org/asciidoc/latest/blocks/breaks/[].
 [%always]
 <<<
 
-This sentence should always start on a new page in PDF. The following headings have explicit char formatting and semantic spans. This is a citation to to a top level - see <<formatted_heading>>.
+This sentence should always start on a new page in PDF. The following headings have explicit char formatting and semantic spans. This is a citation to to a top level - see <<formatted_heading>>. This is a second citation to the same top level heading with inline replacement text - see <<formatted_heading,some text that I added>>.
 
 [[long_H3]]
 === Heading H3 first but a _very very_ *long* heading to hopefully `trigger` line wrapping of lengthy heading text
@@ -43,7 +43,7 @@ This sentence should always start on a new page in PDF. The following headings h
 
 ====== Heading H6 first with `mono`
 
-This is a sentence with a PDF version span:pdf-version[1.3] as used in PDF specs. It hopefully expands to italic "__(PDF 1.3)__" in blue.
+This is a sentence with a PDF version span:pdf-version[1.3] as used in PDF specs. It hopefully expands to lightweight italic "__(PDF 1.3)__".
 
 Here is some text using different semantic spans, such as PDF keywords span:pdf-keyword[true] / span:pdf-keyword[false], span:pdf-keyword[stream] / span:pdf-keyword[((endstream))] and span:pdf-keyword[null].
 
