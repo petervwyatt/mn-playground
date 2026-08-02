@@ -3,7 +3,7 @@
 This tests different kinds of figures, esp. SVG since those can cause font related issues. This is some normal text with an inline image image:Letter_T.png[Some alt text for inline] to see how line wrapping goes for sentences that are excessively long and wordy. The next block is for testing PlantUML SVG.
 
 .Testing PlantUML
-[plantuml,target="PlantUMLTest",format=svg,alt=Plantuml attribute alt text]
+[plantuml,target="PlantUMLTest",format=svg,alt="Plantuml attribute alt text"]
 ....
 @startsalt
 scale 2
@@ -40,7 +40,7 @@ This is a listing of all the fonts PlantUML knows about:
 
 // This makes a mess for PDF font management so only do for debugging!
 
-[plantuml,target="list-fonts",format=svg]
+[plantuml,target="list-fonts",format=svg,alt="PlantUML font list"]
 ....
 @startuml
 listfont The quick brown fox jumps over the lazy dog.
