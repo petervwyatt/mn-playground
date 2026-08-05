@@ -85,4 +85,9 @@ span:note.display,editorial[This is a fourth note span associated with a Relaton
 
 * [[[Attachment3,(Custom biblio text)attachment:(cspell.json)]]], Attachment without any AFRelationship. A CJK: &#x44CA;.
 
+[EDITOR]
+====
+An editor note testing PDF tagging in Bibliographies. This is not associated with any specific biblio entries.
+====
+
 
