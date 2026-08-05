@@ -25,9 +25,9 @@
 :committee: PDF TWG
 :committee-type: technical
 :docstage: release-candidate
-:coverpage-image: images/test-cover.png
-:sponsor_1: Adobe
-:sponsor_logo_1: images/adobe_logo.png
+:coverpage-image: ./images/test-cover.png
+:sponsor: Adobe
+:sponsor_logo: images/adobe_logo.png
 :sponsor_2: Apryse
 :sponsor_logo_2: images/apryse_logo.png
 :sponsor_3: Foxit
