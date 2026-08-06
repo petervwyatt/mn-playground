@@ -1,0 +1,32 @@
+== Testing captions
+
+In Tagged PDF, captions need a block level element internally.
+
+.Caption of an example with a URL to https://pdfa.org
+[example%collapsible]
+====
+An example block used to test captions.
+====
+
+.Caption of a figure with a footnote footnote:[Footnote from a caption]
+[figure]
+====
+image::foxit_logo.png[alt=some A1 alt text] 
+====
+
+.Caption of a table with an inline image image:Letter_T.png[alt=alt-text for caption inline image]
+[cols="h,1,1,1",options="autowidth"]
+|===
+|   | A  | B  | C 
+| 1 | a1 | b1 | c1
+| 2 | a2 | b2 | c2
+|===
+
+.Caption of a source code block with some STEM stem:[alpha_(cs) + alpha_(de)]
+[source,html]
+----
+<h2>H2 heading</h2>
+<p>Hello world!</p>
+----
+
+

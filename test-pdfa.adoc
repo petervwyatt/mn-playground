@@ -13,7 +13,7 @@
 :mn-document-class: pdfa
 :mn-output-extensions: xml,presentation,rxl,html,pdf
 :block-unnumbered: sourcecode
-:fonts: Source Sans 3 ExtraLight;Source Sans 3 Light;Source Sans 3;Source Sans 3 Medium;Source Sans 3 SemiBold;Source Sans 3 ExtraBold;Source Sans 3 Black;Source Code Pro ExtraLight;Source Code Pro Light;Source Code Pro;Source Code Pro Medium;Source Code Pro SemiBold;Source Code Pro ExtraBold;Source Code Pro Black;D050000L;TeXGyreTermes;STIX Two Math;Arial;Courier New;
+:fonts: Source Sans 3 ExtraLight;Source Sans 3 Light;Source Sans 3;Source Sans 3 Medium;Source Sans 3 SemiBold;Source Sans 3 ExtraBold;Source Sans 3 Black;Source Code Pro ExtraLight;Source Code Pro Light;Source Code Pro;Source Code Pro Medium;Source Code Pro SemiBold;Source Code Pro ExtraBold;Source Code Pro Black;D050000L;TeXGyreTermes;STIX Two Math;Arial;Courier New;Times New Roman
 :font-license-agreement: agree-to-terms
 :monospace-font: Source Code Pro
 :presentation-metadata-custom-charset-font: cjk:"Noto Sans SC"
@@ -81,6 +81,7 @@ include::testing-td.adoc[]
 include::testing-spans.adoc[]
 include::testing-lists.adoc[]
 include::testing-numbers.adoc[]
+include::testing-captions.adoc[]
 include::testing-source.adoc[]
 include::testing-admonitions.adoc[]
 include::testing-tables.adoc[]
