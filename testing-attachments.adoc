@@ -22,7 +22,7 @@ Note that the use of the U+44CA glyph in the table above may generate the error:
 
 === References to embedded files (attachments)
 
-This is a <<Attachment1,reference to Attachment 1 with an AFRelationship with anchor text in the reference>>. This is a reference to just the attachment without any additional text for attachment 2 <<Attachment2>> so the filename is used. <<Attachment3>> uses default text from the biblio and does NOT have any *AFRelationship*. This is attachment 1 <<Attachment1,{zwsp}>> with `{zwsp}` as anchor text (so just the paperclip icon).
+This is a <<Attachment1,reference to Attachment 1 with an AFRelationship with anchor text in the reference>>. This is a reference to just the attachment without any additional text for attachment 2 <<Attachment2>> so the filename is used. <<Attachment3>> uses default text from the biblio and does NOT have any *AFRelationship*. This is attachment 1 <<Attachment1,{zwsp}>> with `zwsp` in curly braces as anchor text (so just the paperclip icon).
 
 === Mentions of bibliographic entries with spans
 
