@@ -10,8 +10,8 @@ scale 2
 skinparam lengthAdjust none
 {
   {T!
-    ++ <b>H1</b> | <font:monospaced>Mono</font>
-    +++ <b>Figure</b> //Cats// and **Dogs** | Some ""monospaced"" text 
+    ++ <b>H1</b> | <font:monospaced>Mono</font> | .
+    +++ <b>Figure</b> //Cats// and **Dogs** | Some ""monospaced"" and <font:serif>serifed text<font:sans-serif> | .
   }
 }
 @endsalt
