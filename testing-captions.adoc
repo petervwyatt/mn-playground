@@ -29,4 +29,9 @@ image::foxit_logo.png[alt=some A1 alt text]
 <p>Hello world!</p>
 ----
 
+.Caption of a STEM block
+[stem]
+++++
+f -= lambda x (a * x xx b)
+++++
 
