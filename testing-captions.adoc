@@ -29,9 +29,34 @@ image::foxit_logo.png[alt=some A1 alt text]
 <p>Hello world!</p>
 ----
 
-.Caption of a STEM block
+[cols="h,1,1",options="autowidth",title="Title of a table in the block attributes",align=right]
+|===
+|   | A  | B
+| 1 | a1 | b1
+| 2 | a2 | b2
+|===
+
+.Caption of an unnumbered STEM block
+[stem%unnumbered]
+++++
+x=(-b +- sqrt(b^2 - 4ac))/(2a)
+++++
+
+// Numbered equations should NOT have <table> tags, even if that is what is used for layout purposes 
 [stem]
 ++++
 f -= lambda x (a * x xx b)
 ++++
+
+
+[plantuml,id=my-diagram,title="Title attribute of a `plantuml` block",width=600,height=400]
+....
+@startuml
+Alice -> Bob: Hello
+@enduml
+....
+
+
+A URL with replacement text with a title attribute is here https://www.pdfa.org[the pdfa.org link,title=Source block title text]
+
 
