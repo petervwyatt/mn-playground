@@ -231,6 +231,37 @@ startxref
 %%EOF
 ----
 
+// Adding "%linenums" causes a crash!
+// [source%linenums,pdf,title="Title for PDF source with line numbers"]
+[source,pdf,title="Title for PDF source with line numbers"]
+----
+99 0 obj
+<<
+   /Type /Page
+   /Resources <<          % The current resource dictionary
+      /Properties << /OC2 20 0 R /OC3 30 0 R /OC4 40 0 R >>
+      /XObject << /Fm3 50 0 R >>
+      /ProcSet [ /ImageA /ImageB ]
+   >>
+   /Length 123
+>>
+stream
+{{{__some random inline **bold** [underline]#underline# formatting including ~sub~, ^super^, and ``backticks``__}}}
+endstream
+endobj
+
+% Check if `stem:` is supported.
+% It is, but layout goes mad when line numbers are enabled!
+1 0 obj
+<< /Length 123 >>
+stream
+{{{ stem:[sum_(i=1)^n i^3=((n(n+1))/2)^2] }}}
+endstream
+endobj
+----
+
+
+
 Random mention of ((zebra-striping)) for indexing. Last line in H1.
 
 
