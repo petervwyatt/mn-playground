@@ -231,14 +231,16 @@ startxref
 %%EOF
 ----
 
-// Adding "%linenums" causes a crash!
-// [source%linenums,pdf,title="Title for PDF source with line numbers"]
-[source,pdf,title="Title for PDF source with line numbers"]
+=== Line numbered source code blocks
+
+Some text before a source code block.
+
+[source%linenums,pdf,title="Title for PDF source with line numbers"]
 ----
 99 0 obj
 <<
    /Type /Page
-   /Resources <<          % The current resource dictionary
+   /Resources <<     % The current resource dictionary
       /Properties << /OC2 20 0 R /OC3 30 0 R /OC4 40 0 R >>
       /XObject << /Fm3 50 0 R >>
       /ProcSet [ /ImageA /ImageB ]
@@ -260,6 +262,17 @@ endstream
 endobj
 ----
 
+Some text between source code blocks.
+
+[source%linenums,html,title=Long title for HTML line numbered source block]
+----
+<h1>Some heading</h1>
+<div>
+  <p style="font-size: 12pt; font-weight: normal;"><!-- this is a very long XML comment to see how wrapping of source code works with a table cell -->
+  This is a very long paragraph of text in HTML to see how wrapping of source code works with a table cell. It should be colourized by Rouge.
+  </p>
+</div>
+----
 
 
 Random mention of ((zebra-striping)) for indexing. Last line in H1.
