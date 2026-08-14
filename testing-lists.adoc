@@ -50,13 +50,14 @@ If the CA definition text is longer (e.g. has "Why is this indent different to a
 
 === Lists followed by notes
 
-An unordered list followed immediately by a separate note - this is *INCORRECT* markup:
-
-* Item 1
-* Item 2
-
-
-NOTE: This is a separate inline note that is NOT associated with any specific list item. The XML includes this outside the `<li>/</li>` but inside the `</ul>` tag! This will format badly in PDF because of this, which is a good way to ensure we NEVER AUTHOR CONTENT LIKE THIS!!!
+// Comment out to avoid PDF/UA-1 validation failures. DO NOT DO THE FOLLOWING! THSI IS BAD MARKUP (author's fault, not MN!)
+// An unordered list followed immediately by a separate note - this is *INCORRECT* markup:
+//
+// * Item 1
+// * Item 2
+//
+//
+// NOTE: This is a separate inline note that is NOT associated with any specific list item. The XML includes this outside the `<li>/</li>` but inside the `</ul>` tag! This will format badly in PDF because of this, which is a good way to ensure we NEVER AUTHOR CONTENT LIKE THIS!!!
 
 Another unordered list followed immediately by a separate note with `keep-separate=true` - this is the correct markup and should visually appear as such:
 
