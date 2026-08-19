@@ -15,7 +15,6 @@
 :block-unnumbered: sourcecode
 :fonts: Source Sans 3 ExtraLight;Source Sans 3 Light;Source Sans 3;Source Sans 3 Medium;Source Sans 3 SemiBold;Source Sans 3 ExtraBold;Source Sans 3 Black;Source Code Pro ExtraLight;Source Code Pro Light;Source Code Pro;Source Code Pro Medium;Source Code Pro SemiBold;Source Code Pro ExtraBold;Source Code Pro Black;D050000L;TeXGyreTermes;STIX Two Math;Arial;Courier New;Times New Roman
 :font-license-agreement: agree-to-terms
-:monospace-font: Source Code Pro
 :presentation-metadata-custom-charset-font: cjk:"Noto Sans SC"
 :keywords: PDF, test, playground, fake
 :imagesdir: images
@@ -24,7 +23,7 @@
 :doctype: specification
 :committee: PDF TWG
 :committee-type: technical
-:docstage: release-candidate
+:docstage: draft
 :coverpage-image: ./images/test-cover.png
 :sponsor: Adobe
 :sponsor_logo: images/adobe_logo.png
