@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "metanorma-cli"
-# gem "metanorma-ribose", git: "https://github.com/metanorma/metanorma-ribose.git", branch: "main"
+gem "metanorma-ribose", git: "https://github.com/metanorma/metanorma-ribose.git", branch: "main"
 # gem "metanorma-taste", git: "https://github.com/metanorma/metanorma-taste.git", branch: "main"
 # gem "metanorma-standoc", git: "https://github.com/metanorma/metanorma-standoc.git", branch: "main"
 # gem "metanorma-iso", git: "https://github.com/metanorma/metanorma-iso.git", branch: "main"
