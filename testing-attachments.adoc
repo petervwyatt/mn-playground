@@ -50,6 +50,9 @@ span:note.display[Some note related to IEC 61966-2-1 with a bare URL https://pdf
 
 * [[[IEC_61966_2_1_AMD1,IEC 61966-2-1:1999/AMD1:2003]]]
 
+// Testing for https://github.com/metanorma/metanorma-pdfa/issues/95
+* [[[ETSI_319_142_1,amend(ETSI EN 319 142-1 V1.2.1)]]]
+//span:note.display,warning[A newer version of ETSI EN 319 142-1 (V1.2.1, 2024-01) has now been published by ETSI since the publication of <<ISO_32000_2>> However, this new ETSI version does not yet apply to PDF because this Normative Reference is an explicitly dated version and changing the normative reference has not been agreed.]
 
 // Testing of notes related to bibliographic entries. See https://www.metanorma.org/author/topics/sections/bibliography/
 // Notes need to be "span:note.display[...]" to render!!!
