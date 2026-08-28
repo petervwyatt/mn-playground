@@ -28,7 +28,10 @@ text, fonts, vector graphics, raster images and other information needed to disp
 
 === To-do notes need a heading to render
 
+// Disable TODO notes which break PDF/UA-1 conformance
+ifeval::[1 > 2]
 TODO: This is a single-line to-do admonition which is only supported by MN. It renders as a PDF sticky note annotation.
+endif::[]
 
 Below this point are the block equivalents with captions immediately ABOVE the block marker. 
 
@@ -88,6 +91,8 @@ A paragraph of random text copied from Wikipedia. Portable Document Format (PDF)
 
 === To-do notes need a heading 
 
+// Disable TODO notes which break PDF/UA-1 conformance
+ifeval::[1 > 2]
 .Caption of to-do block
 [TODO]
 ====
@@ -95,6 +100,8 @@ This is a block to-do admonition with a caption which is only supported by MN.
 
 This is a second paragraph in a to-do block admonition to check inter-paragraph spacing as well as spacing before and after each example. Needs to be long eough to wrap over at least two lines.
 ====
+endif::[]
+
 
 A paragraph of random text copied from Wikipedia. Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 used to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. Based on the PostScript language, a PDF file encapsulates a complete description of a fixed-layout document, including the text, fonts, vector graphics, raster images and other information needed to display it.
 
