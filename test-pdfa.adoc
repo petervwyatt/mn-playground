@@ -57,7 +57,6 @@
 :sectnumlevels: 6
 :toclevels: 6
 :docinfo: shared
-:source-highlighter: rouge
 :number-presentation-profile-hex-bytes: base=16, base_postfix='h', group_digits=2, padding_digits=2, hex_capital=true, significant=2
 :number-presentation-profile-octal:     base=8,  base_prefix='\',  group_digits=3, padding_digits=3
 :number-presentation-profile-binary:    base=2,  base_postfix='b', group_digits=4, padding_group_digits=4, group=' '
