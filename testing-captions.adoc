@@ -2,6 +2,7 @@
 
 In Tagged PDF, captions need a block level element internally.
 
+// URL is missing in bookmarks and ToC. See https://github.com/metanorma/metanorma-pdfa/issues/96 
 .Caption of an example with a URL to https://pdfa.org
 [example%collapsible]
 ====
@@ -14,6 +15,9 @@ An example block used to test captions.
 image::foxit_logo.png[alt=some A1 alt text] 
 ====
 
+
+// The following caption with an inline image fails ISO STS XML and the image also does not appear in the PDF bookmarks
+// See https://github.com/metanorma/metanorma-pdfa/issues/96
 .Caption of a table with an inline image image:Letter_T.png[alt=alt-text for caption inline image]
 [cols="h,1,1,1",options="autowidth"]
 |===
@@ -22,12 +26,13 @@ image::foxit_logo.png[alt=some A1 alt text]
 | 2 | a2 | b2 | c2
 |===
 
-.Caption of a source code block with some STEM stem:[alpha_(cs) + alpha_(de)]
-[source,html]
-----
-<h2>H2 heading</h2>
-<p>Hello world!</p>
-----
+// No STEM appears in ToC or bookmarks. See https://github.com/metanorma/metanorma-pdfa/issues/96
+.Caption of an example block with some STEM stem:[alpha_(cs) + alpha_(de)]
+[example%collapsible]
+====
+An example block used to test captions.
+====
+
 
 [cols="h,1,1",options="autowidth",title="Title of a table in the block attributes",align=right]
 |===
