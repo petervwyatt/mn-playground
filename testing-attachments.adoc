@@ -49,7 +49,7 @@ span:note.display[Some note related to IEC 61966-2-1 with a bare URL https://pdf
 
 
 // FATAL CRASH: why does the following line cause a Ruby crash??
-// * [[[porter,doi:10.1145/964965.808606]]]
+* [[[porter,doi:10.1145/964965.808606]]]
 
 
 * [[[IEC_61966_2_1_AMD1,IEC 61966-2-1:1999/AMD1:2003]]]
