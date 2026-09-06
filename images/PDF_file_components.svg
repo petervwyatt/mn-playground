@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Ebene_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+  <defs>
+    <style>
+      .Fig001-b {
+        font-family: 'Source Sans 3';
+        font-size: 26px;
+        fill: #000;
+        stroke: none;
+        font-style: normal;
+      }
+      .Fig001-c {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="Fig001-c" x="3" y="2.5" width="138" height="65"/>
+    <rect class="Fig001-c" x="3" y="67.5" width="138" height="65"/>
+    <rect class="Fig001-c" x="3" y="132.5" width="138" height="65"/>
+  </g>
+  <rect class="Fig001-c" x="204" y="69.5" width="133" height="65"/>
+  <text class="Fig001-b" transform="translate(28.22 43.14)"><tspan x="0" y="0">Objects</tspan></text>
+  <text class="Fig001-b" transform="translate(50.09 98.14)"><tspan x="0" y="0">File</tspan><tspan x="-30.39" y="22">structure</tspan></text>
+  <text class="Fig001-b" transform="translate(226.54 100.14)"><tspan x="0" y="0">Content</tspan><tspan x="5.8" y="22">stream</tspan></text>
+  <text class="Fig001-b" transform="translate(12.7 162.14)"><tspan x="0" y="0">Document</tspan><tspan x="6.99" y="22">structure</tspan></text>
+</svg>
