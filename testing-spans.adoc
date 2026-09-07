@@ -75,6 +75,19 @@ Testing of when "x" is auto-converted to stem:[xx] when a digit is immediately e
 * 0 x0 - space before "x"
 * 0x\0 - use of `\0` after "x"
 
+== Link macro with line breaks
+
+Example from 14.8:
+
+This is some text with 2 separate URLs https://pdfa.org[link that] +
+https://pdfa.org[breaks over a line] hopefully.
+
+Some more text with a https://pdfa.org[auto-link macro that +
+breaks over a line] hopefully.
+
+Yet more text a link:https://pdfa.org[explicit link macro that +
+breaks over a line] hopefully.
+
 == Quote blocks
 
 The following is a quote block. It is also citing a bibliographic reference from elsewhere in this document. Note that quotes cannot be used in the 3rd argument. This is extra words to cause more wrapping so margins and spacing can be visually checked in the Metanorma output.
