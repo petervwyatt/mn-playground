@@ -1,5 +1,11 @@
 == Figures
 
+[[figure_PDFFileComponents]]
+.PDF file components
+====
+image::PDF_file_components.svg["Block diagram of PDF file components"]
+====
+
 This tests different kinds of figures, esp. SVG since those can cause font related issues. This is some normal text with an inline image image:Letter_T.png[Some alt text for inline] to see how line wrapping goes for sentences that are excessively long and wordy. The next block is for testing PlantUML SVG.
 
 .Testing PlantUML
