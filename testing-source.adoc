@@ -274,6 +274,33 @@ Some text between source code blocks.
 </div>
 ----
 
+.Example of source code with binary-ish data
+[example]
+====
+If binary data wrapped with 3 curly braces then it gets interpreted! If this has to be done to avoid Rouge syntax highlighting, then MUST ensure pass-through (otherwise keywords `endstream` and `endobj` end up on one line.
+
+[source,pdf]
+----
+1 0 obj
+<< /Length 471
+   /Filter [ /ASCII85Decode /FlateDecode ]
+>>
+stream
+<~Garo>9iJn_(khA'p`K4^3`9Z,iMn(XE,p\Z!Y95([h*
+BiVFb4kpEkP;Nd,8%RdNAO.?Iq\I0Da2mKqZC@`/T$dP(
+Jgo@%O=B>Yu5@-A)[rPg%+Q_gVh2dAV;L8ibF8KqZs70+
+_eWdT]D!J9(q"6lo9m)9KJ10KF/O.\@4Z/gY>C(E[=+_&
+(,W)^a^)p0%1D<7,YEI=XLhY8hH<P<*KlQ;QD7/D3"9L`
+ZdF1.s3CMR5Bi*=)R=+u_de83^9cld*t*cC;)PGfn1(dd
+5!4:*aJYG-NA"`m]86)A^'V/"@C$7/!DJ21nX1pj2?Y,V
+u@$ag8!Z=UUC=;k^:;R8kZL)^9:&-GSu1k1ogSU=-Y\l?
+q*6^>)Er^GbKcNdbPZapmk7Jt=A3<%,'H[eO=C0ImV`GR
+8D.E<tU`1Z1fFFe?u)Bi>8lCLk9O.+nT]t,<X)t.XRo`
+~>
+endstream
+endobj
+----
+====
 
 Random mention of ((zebra-striping)) for indexing. Last line in H1.
 
