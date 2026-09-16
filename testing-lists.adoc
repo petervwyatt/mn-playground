@@ -121,6 +121,40 @@ And a third part   followed by an inline note.
 NOTE: This is a small inline note that is semantically associated with Item 12.A (depth 2) by using a `+` and should be indented appropriately.
 --
 
+=== Unbulleted lists
+
+Testing unbulleted lists including nested lists - required for correct Tagged PDF and semantic extraction!
+
+[type="none"]
+* no bullet first line, indented.
+* no bullet second line, indented.
+[type="no-bullet"]
+  ** no bullet second depth, indented.
+  ** no bullet second depth, indented.
+* no bullet third line, indented.
+
+=== Table lists
+
+See https://www.metanorma.org/author/topics/blocks/lists/#_list_styling_lists_as_tables. This uses list nesting as column indicator. The `display-directives` also doesn't seem to support `class=` but that's fine since we won't use these as we author semantically. 
+
+[display=table,display-directives="class='layout',colgroup='1,2,1'"]
+.List turned into table
+. Ordered list 1
++
+--
+.Second header
+.. Ordered sublist 1
+*** Unordered A
+*** Unordered B
+*** Unordered C
+.. Ordered sublist 2
+--
+. Ordered list 2
+. Ordered list 3
+.. Ordered sublist of 3 - A
+... Ordered sublist of 3 A - D
+... Ordered sublist of 3 A - E
+
 The last paragraph of standard text in the list section.
 
 
