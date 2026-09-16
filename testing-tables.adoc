@@ -276,4 +276,69 @@ h| Structure Elements | Attributes | Inheritable
 
 |===
 
+=== Testing table footnotes
+
+We want to test how text can cite references in table footnotes. See https://www.metanorma.org/author/topics/inline-markup/footnotes/.
+Is this citing <<table_with_footnotes>> <<fn_id1,footnote "fn_id1">> or <<ext_fn_id1,footnote "ext_fn_id1">> or <<ext_fn_id2,footnote "ext_fn_id2">> correctly?
+
+[[table_with_footnotes]]
+.Simple table with footnotes
+[cols="h,1,1,1",options="header,autowidth"]
+|===
+h|   | A  | B  | C 
+| 1
+| a1 footnote:[This is a simple text footnote without any ID]
+| b1 footnote:fn_id1[This is a footnote labelled ID "fn_id1" used by cells b1 and c1.]
+| c1 footnote:fn_id1[]
+
+| 2
+| a2
+| b2 This is an external footnote ID "ext_fn_id1" via `footnoteblock:`. footnoteblock:[ext_fn_id1] 
+| c2 This a more complex external footnote "ext_fn_id2" via `footnoteblock:`. footnoteblock:[ext_fn_id2]
+
+| 3
+| a3 This is a citation to the 1st `footnoteblock:` via "ext_fn_id1". footnote:ext_fn_id1[]
+| b3 This is a citation to the 1st `footnoteblock:` via "ext_fn_id2". footnote:[ext_fn_id2]
+| c3
+
+|===
+
+[[ext_fn_id1]]
+[NOTE]
+--
+This is table footnote located after the table using 2 x `-`.
+
+This should be a second paragraph. The following is a list.
+
+* List A
+.. List 1
+* List B
+--
+
+
+[[ext_fn_id2]]
+[NOTE]
+--
+This is table footnote located after the table using 2 x `-` with**__OUT__** example and source code blocks internally. Include blocks causes MN to crash!
+
+// If the following lines are uncommented, then mn2pdf crashes! 
+// [example]
+// ====
+// This is the example.
+
+// [source,html]
+// ----
+// <h1>Heading</h1>
+// <p><i>Hello</i> <b>world</b></p>
+// ----
+// ====
+--
+
+[NOTE]
+A table note located below the table. Added as a table note _above all footnotes_.
+
+
+[NOTE,keep-separate=true]
+An independent note below the table because it is labelled `keep-separate=true`.
+
 
