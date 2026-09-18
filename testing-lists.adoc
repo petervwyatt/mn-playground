@@ -135,9 +135,10 @@ Testing unbulleted lists including nested lists - required for correct Tagged PD
 
 === Table lists
 
-See https://www.metanorma.org/author/topics/blocks/lists/#_list_styling_lists_as_tables. This uses list nesting as column indicator. The `display-directives` also doesn't seem to support `class=` but that's fine since we won't use these as we author semantically. 
+See https://www.metanorma.org/author/topics/blocks/lists/#_list_styling_lists_as_tables. This uses list nesting as column indicator. 
+The `display-directives` is NOT supposed to include any `class=` directives. 
 
-[display=table,display-directives="class='layout',colgroup='1,2,1'"]
+[display=table,display-directives="colgroup='1,2,1'",class="layout"]
 .List turned into table
 . Ordered list 1
 +
