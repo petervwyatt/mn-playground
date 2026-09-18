@@ -297,8 +297,8 @@ h|   | A  | B  | C
 | c2 This a more complex external footnote "ext_fn_id2" via `footnoteblock:`. footnoteblock:[ext_fn_id2]
 
 | 3
-| a3 This is a citation to the 1st `footnoteblock:` via "ext_fn_id1". footnote:ext_fn_id1[]
-| b3 This is a citation to the 1st `footnoteblock:` via "ext_fn_id2". footnote:[ext_fn_id2]
+| a3 This is a citation to the 1st `footnoteblock:` via "ext_fn_id1". footnoteblock:[ext_fn_id1]
+| b3 This is a citation to the 1st `footnoteblock:` via "ext_fn_id2". footnoteblock:[ext_fn_id2]
 | c3
 
 |===
