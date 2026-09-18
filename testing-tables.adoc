@@ -279,6 +279,8 @@ h| Structure Elements | Attributes | Inheritable
 === Testing table footnotes
 
 We want to test how text can cite references in table footnotes. See https://www.metanorma.org/author/topics/inline-markup/footnotes/.
+
+// If the following line is uncommented, then *.pdf.err file has errors regarding missing targets. See https://github.com/metanorma/metanorma-pdfa/issues/105
 Is this citing <<table_with_footnotes>> <<fn_id1,footnote "fn_id1">> or <<ext_fn_id1,footnote "ext_fn_id1">> or <<ext_fn_id2,footnote "ext_fn_id2">> correctly?
 
 [[table_with_footnotes]]
