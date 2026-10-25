@@ -10,14 +10,13 @@
 :copyright-year: 2025
 :language: en
 :mn-document-class: iso
-:mn-output-extensions: xml,presentation,rxl,html,pdf,sts,isosts
+:mn-output-extensions: xml,presentation,rxl,html,pdf
 :block-unnumbered: sourcecode
 :fonts: Source Sans 3 ExtraLight;Source Sans 3 Light;Source Sans 3;Source Sans 3 Medium;Source Sans 3 SemiBold;Source Sans 3 ExtraBold;Source Sans 3 Black;Source Code Pro ExtraLight;Source Code Pro Light;Source Code Pro;Source Code Pro Medium;Source Code Pro SemiBold;Source Code Pro ExtraBold;Source Code Pro Black;D050000L;TeXGyreTermes;STIX Two Math;Arial;Arial;Courier New;Times New Roman
 :font-license-agreement: agree-to-terms
 :presentation-metadata-custom-charset-font: cjk:"Noto Sans SC"
 :keywords: PDF, test, playground, fake
 :imagesdir: images
-:publisher: PDF Association
 :document-class: iso
 :doctype: international-standard
 :xrefstyle: short
@@ -25,7 +24,6 @@
 :no-isobib-cache:
 :flush-caches: true
 :svg-conform-profile: base
-:index-terms: false
 :docnumber: 32000
 :partnumber: 3
 :title-intro-en: Document management
@@ -46,9 +44,9 @@
 :secretariat: ANSI
 :committee-type: technical
 :toc-figures: false
-:toc-tables: true
-:toc-requirements: true
-:toc-examples: true
+:toc-tables: false
+:toc-requirements: false
+:index-terms: true
 :clause-term: clause
 :clauses-term: clauses
 :sub-clause-term: subclause
