@@ -1,6 +1,8 @@
 [[formatted_heading]]
 == Testing of `spans` __and__ **formatting**
 
+=== General
+
 The H1 heading above should have backtick (code), italic, and bold formatting applied (in that order). Check in both text body and navigation menus.
 
 [[Smart_quoting]]
