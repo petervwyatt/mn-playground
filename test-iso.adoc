@@ -23,7 +23,7 @@
 :plantuml-image-format: svg 
 :no-isobib-cache:
 :flush-caches: true
-:svg-conform-profile: base
+:svg-conform-profile: metanorma
 :docnumber: 32000
 :partnumber: 3
 :title-intro-en: Document management

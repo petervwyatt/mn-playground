@@ -35,7 +35,7 @@
 :plantuml-image-format: svg 
 :no-isobib-cache:
 :flush-caches: true
-:svg-conform-profile: base
+:svg-conform-profile: metanorma
 :index-terms: true
 :toc-figures: true
 :toc-tables: true
