@@ -125,7 +125,7 @@ NOTE: This is a small inline note that is semantically associated with Item 12.A
 
 === Unbulleted lists
 
-Testing unbulleted lists including nested lists - required for correct Tagged PDF and semantic extraction!
+Testing unbulleted lists including nested lists - required for correct Tagged PDF and semantic extraction:
 
 [type="none"]
 * no bullet first line, indented.

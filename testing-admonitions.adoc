@@ -33,7 +33,7 @@ ifeval::[1 > 2]
 TODO: This is a single-line to-do admonition which is only supported by MN. It renders as a PDF sticky note annotation.
 endif::[]
 
-Below this point are the block equivalents with captions immediately ABOVE the block marker. 
+Below this point are the block equivalents with captions immediately above the block marker. 
 
 .Caption of note block
 [NOTE]
