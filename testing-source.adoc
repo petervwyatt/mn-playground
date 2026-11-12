@@ -99,7 +99,7 @@ endstream
 endobj
 --
 
-Use of multiple adjacent PDF source code blocks with `keep-lines-together=true` to see if we can control page breaks and avoid orphans and widows in the middle of PDF objects which ruin readability. There is also `keep-with-next=true` but this is not used here:
+Use of multiple adjacent PDF source code blocks with `keep-lines-together=true` to test page breaks and avoid orphans and widows in the middle of PDF objects which ruin readability. There is also `keep-with-next=true` but this is not used here:
 
 .Title of PDF source block - first of several with `keep-lines-together=true`
 [source,pdf,keep-lines-together=true]
